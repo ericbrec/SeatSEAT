@@ -39,6 +39,6 @@ Here is the procedure for ticket selection:
    - **Prefer later dates**: Games with the same rank that are later in the season are given priority over other games with that same rank.
    -  Your final pick order after the tiebreaker is automatically calculated and shown in the Pick column. To tweak the pick order, change your rank values (or the tiebreaking rule).
 7. If desired, select from the constraints listed. Normally, you will not need to use the (pairs) and (quads) constraints unless you need to achieve different spacings between games for pairs and quads.
-8. Ensure the games list is sorted by date and you've renamed your spreadsheet (step 1) before sending it to me (the organizer).
-9. The deadline for sending me (the organizer) your spreadsheet is [*deadline date*]. This deadline allows me to provide everyone ticket assignments early enough for people to plan vacations, business trips, etc., without interfering with their ticketed games.
+8. Custom sort the games list by day, time, and type before submitting (ignore if you never resorted the list).
+9. The deadline for sending me (the organizer) your renamed spreadsheet is [*deadline date*]. This deadline allows me to provide everyone ticket assignments early enough for people to plan vacations, business trips, etc., without interfering with their ticketed games.
 10. Once tickets are allocated, pay the balance due, take delivery of your tickets, and enjoy the season!
