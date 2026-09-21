@@ -1,6 +1,6 @@
 # SeatSEAT
 
-**SeatSEAT** is a Jupyter notebook and Excel template you can use to allocate season tickets fairly and optimally among a group of sports fans without going through a draft or auction.
+**SeatSEAT**, the Seat Selection Equity Allocation Tool, is a Jupyter notebook and Excel template you can use to allocate season tickets fairly and optimally among a group of sports fans without going through a draft or auction.
 * The algorithm is based on Thomas Grandine's "Assigning season tickets fairly." Interfaces 28, no. 4 (1998): 15-20.
 * The Jupyter notebook is called "AllocateTickets.ipynb" and can found in the top folder.
 * The Excel template is called "Full Name - [Team] [Season].xlsx" and can be found in the examples folders.
