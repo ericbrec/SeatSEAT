@@ -1,61 +1,98 @@
 import tkinter as tk
 from tkinter import ttk, font
+from tkinter import filedialog
 from tkinter.scrolledtext import ScrolledText
 import tkinterweb
+import markdown
+import klembord
+from allocator import Allocator
 
-def create_app():
-    root = tk.Tk()
-    root.title("SeatSEAT")
-    root.geometry("1100x800")
-    default_font = font.nametofont("TkDefaultFont")
-    default_font.configure(size=12)
-    # --- Top Frames (Participants / Ticket Allocation) ---
-    top_frame = ttk.Frame(root)
-    top_frame.pack(fill="both", expand=True, padx=10, pady=10)
+class SeatSEAT(tk.Tk):
+    def __init__(self, *args, **kw):
+        tk.Tk.__init__(self, *args, **kw)
+        self.title("SeatSEAT")
+        self.geometry("1100x850")
+        default_font = font.nametofont("TkDefaultFont")
+        default_font.configure(size=12)
+        self.allocator = Allocator()
 
-    # Left column
-    left_frame = ttk.Frame(top_frame)
-    left_frame.grid(row=0, column=0, sticky="nsew", padx=(0, 10))
+        # --- Top Frames (Participants / Ticket Allocation) ---
+        top_frame = ttk.Frame(self)
+        top_frame.pack(fill="both", expand=True, padx=10, pady=10)
 
-    participants_label = ttk.Label(left_frame, text="Participants")
-    participants_label.pack(pady=(0, 5))
+        # Left column
+        left_frame = ttk.Frame(top_frame)
+        left_frame.grid(row=0, column=0, sticky="nsew", padx=(0, 10))
 
-    participants_html = tkinterweb.HtmlFrame(left_frame, horizontal_scrollbar="auto")
-    participants_html.pack(fill="both", expand=True)
+        participants_label = ttk.Label(left_frame, text="Participants")
+        participants_label.pack(pady=(0, 5))
 
-    load_btn = ttk.Button(left_frame, text="Load Participants")
-    load_btn.pack(pady=5)
+        self.participants_html = tkinterweb.HtmlFrame(left_frame, textwrap=False, horizontal_scrollbar="auto")
+        self.participants_html.pack(fill="both", expand=True)
 
-    # Right column
-    right_frame = ttk.Frame(top_frame)
-    right_frame.grid(row=0, column=1, sticky="nsew", padx=(10, 0))
+        load_btn = ttk.Button(left_frame, text="Load Participants", command=self.load_participants)
+        load_btn.pack(pady=(5, 0))
 
-    allocation_label = ttk.Label(right_frame, text="Ticket Allocation")
-    allocation_label.pack(pady=(0, 5))
+        # Right column
+        right_frame = ttk.Frame(top_frame)
+        right_frame.grid(row=0, column=1, sticky="nsew", padx=(10, 0))
 
-    allocation_html = tkinterweb.HtmlFrame(right_frame, horizontal_scrollbar="auto")
-    allocation_html.pack(fill="both", expand=True)
+        allocation_label = ttk.Label(right_frame, text="Ticket Allocation")
+        allocation_label.pack(pady=(0, 5))
 
-    allocate_btn = ttk.Button(right_frame, text="Copy to Clipboard")
-    allocate_btn.pack(pady=5)
+        self.allocation_html = tkinterweb.HtmlFrame(right_frame, textwrap=False, horizontal_scrollbar="auto")
+        self.allocation_html.pack(fill="both", expand=True)
 
-    # Make columns expand evenly
-    top_frame.columnconfigure(0, weight=1)
-    top_frame.columnconfigure(1, weight=1)
-    top_frame.rowconfigure(0, weight=1)
+        allocate_btn = ttk.Button(right_frame, text="Copy to Clipboard", command=self.copy_to_clipboard)
+        allocate_btn.pack(pady=(5, 0))
 
-    # --- Error Report Section ---
-    error_frame = ttk.Frame(root)
-    error_frame.pack(fill="both", expand=True, padx=10, pady=(0, 10))
+        # Make columns expand evenly
+        top_frame.columnconfigure(0, weight=1)
+        top_frame.columnconfigure(1, weight=1)
+        top_frame.rowconfigure(0, weight=1)
 
-    error_label = ttk.Label(error_frame, text="Error Report")
-    error_label.pack(anchor="w")
+        # --- Error Report Section ---
+        error_frame = ttk.Frame(self)
+        error_frame.pack(fill="both", expand=True, padx=10, pady=(0, 10))
 
-    error_box = ScrolledText(error_frame, height=12, wrap="word")
-    error_box.pack(fill="both", expand=True)
+        error_label = ttk.Label(error_frame, text="Errors")
+        error_label.pack(anchor="c", pady=(0, 5))
 
-    return root
+        self.error_box = ScrolledText(error_frame, wrap="word")
+        self.error_box.pack(fill="both", expand=True)
+
+    def format_report(self, snippet):
+        return f"""
+            <html>
+            <head>
+            <style>
+            table, th, td {{
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 2px;
+            }}
+            </style>
+            </head>
+            <body>
+            {snippet}
+            </body>
+            </html>
+        """
+
+    def load_participants(self):
+        directory = filedialog.askdirectory(title="Load Participants")
+        if directory:
+            self.allocator.LoadSchedule(directory)
+            self.allocator.LoadFans()
+            self.participants_html.load_html(self.format_report(markdown.markdown(self.allocator.GameRankingReport(), extensions=['tables'])))
+            self.allocator.AllocateTickets()
+            self.allocation_html.load_html(self.format_report(markdown.markdown(self.allocator.GameAllocationReport(), extensions=['tables'])))
+            self.error_box.delete('1.0', 'end')
+            self.error_box.insert('end', self.allocator.errorReport)
+
+    def copy_to_clipboard(self):
+        pass
 
 if __name__ == "__main__":
-    app = create_app()
+    app = SeatSEAT()
     app.mainloop()

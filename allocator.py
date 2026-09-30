@@ -56,8 +56,13 @@ class SportsFan:
             self.constraints += extra
 
 class Allocator:
-    def __init__(self, directory):
-        self.directory = "."
+    def __init__(self, directory = ""):
+        self.Initialize()
+        if self.directory != "":
+            self.LoadSchedule(self.directory)
+
+    def Initialize(self):
+        self.directory = ""
         self.errorReport = ""
         self.mainSheet = None
         self.schedule = []
@@ -68,11 +73,10 @@ class Allocator:
         self.fans = []
         self.FansInPlan = 0
         self.tixModel = None
-        self.LoadSchedule(directory)
 
     def LoadSchedule(self, directory):
-        self.directory = "examples/Mariners 2026"
-        self.errorReport = ""
+        self.Initialize()
+        self.directory = directory
         globFilename = self.directory + "/Full Name*.xls*"
         excelFiles = glob.glob(globFilename)
         if len(excelFiles) < 1 or len(excelFiles) > 1:
@@ -89,10 +93,6 @@ class Allocator:
         locale.setlocale(locale.LC_ALL, '')
         Game = namedtuple('Game', ('weekday', 'date', 'gameDay', 'time', 'opponent', 'type', 'price', 'pairs', 'seats'))
         openingDay = self.mainSheet.Date[0]
-        self.schedule = []
-        self.GamesInPlan = 0
-        self.PairsInPlan = 0
-        self.MaxPairsPerGame = 0
         gamesPerMonth = {}
         totalMonths = 0
         for weekday, date, time, opponent, type, price, pairs, seats in zip(self.mainSheet.Day, self.mainSheet.Date, self.mainSheet.Time, self.mainSheet.Opponent, self.mainSheet.Type, self.mainSheet.Price, self.mainSheet.GamePairs, self.mainSheet.Seats):
@@ -134,11 +134,6 @@ class Allocator:
                     if newMonth in self.logicalMonths:
                         self.logicalMonths[month] = self.logicalMonths[newMonth]
                         break
-
-        # Clear the fans list and tickets model
-        self.fans = []
-        self.FansInPlan
-        self.tixModel = None
 
     def LoadFans(self):
         #########################################################
@@ -254,6 +249,9 @@ class Allocator:
 
         ##### Define the participants here #####
         self.fans = []
+        self.tixModel = None
+        if self.mainSheet is None:
+            return
         totalPairs = 0
         for fullName, nPairs, nQuads in zip(self.mainSheet.FullName, self.mainSheet.Pairs, self.mainSheet.Quads):
             if not isinstance(fullName, str) or fullName == "":
@@ -291,9 +289,6 @@ class Allocator:
             self.fans.append(SportsFan(self.GamesInPlan, f"Spare Pair", nPairs, 0, pairsRank))
             leftOver -= nPairs
 
-        # Reset the tickets model
-        self.tixModel = None
-
     def GameRankingReport(self):
         gameRankingReport = "### Constraints:\n| Full Name | Pairs | Quads | Constraints |\n| :-: | :-: | :-: | :- |\n"
         for fan in self.fans[:self.FansInPlan]:
@@ -302,7 +297,7 @@ class Allocator:
                 gameRankingReport += f"{constraint.description[constraint.description.find(':') + 2:]}; "
             gameRankingReport += "\n"
 
-        gameRankingReport += "### Games:\n| Day | Date | Time | Opponent | Type |"
+        gameRankingReport += "\n### Games:\n| Day | Date | Time | Opponent | Type |"
         for fan in self.fans[:self.FansInPlan]:
             gameRankingReport += f" {fan.name} |"
         gameRankingReport += "\n| :-: | :-: | :-: | :-: | :-: |"  + " :-: |" * self.FansInPlan + "\n"
@@ -319,6 +314,7 @@ class Allocator:
     def AllocateTickets(self):
         try:
             self.tixModel = mip.Model()
+            self.tixModel.verbose = 0
             tixVars = []
             for fan in self.fans:
                 tixVars += [self.tixModel.add_var(name = f"{fan.name}(pair {game.date.strftime('%x')} {game.time} {game.type})", var_type = mip.BINARY) for game in self.schedule]
@@ -380,6 +376,7 @@ class Allocator:
                 self.tixModel = self.tixModel.copy() 
                 # Reset the model, unrestrict the slack variables, and rerun the optimization to find the infeasible constraints
                 tixRelax.reset()
+                tixRelax.verbose = 0
                 for var in slackVars:
                     var.ub = 1.0
                 try:
@@ -416,7 +413,7 @@ class Allocator:
                         gameAllocationReport += " | |"
             gameAllocationReport += " ❌ |" * (self.MaxPairsPerGame - game.pairs) + "\n"
 
-        gameAllocationReport += "### Amount owed:\n| Full Name | Amount owed | Paid |\n"
+        gameAllocationReport += "\n### Amount owed:\n| Full Name | Amount owed | Paid |\n"
         gameAllocationReport += "| :- | -: | -: |\n"
         for name, cost in sorted(costs.items()):
             gameAllocationReport += f"| {name} | {locale.currency(cost, grouping=True)} | |\n"
