@@ -98,6 +98,7 @@ class Allocator:
         for weekday, date, time, opponent, type, price, pairs, seats in zip(self.mainSheet.Day, self.mainSheet.Date, self.mainSheet.Time, self.mainSheet.Opponent, self.mainSheet.Type, self.mainSheet.Price, self.mainSheet.GamePairs, self.mainSheet.Seats):
             if not isinstance(weekday, str) or weekday == "" or pd.isna(date):
                 break
+            pairs = int(pairs)
             self.schedule.append(Game(weekday, date, (date - openingDay).days, time.strftime("%I:%M %p"), opponent, type, price, pairs, seats))
             self.GamesInPlan += 1
             self.PairsInPlan += pairs
@@ -256,12 +257,12 @@ class Allocator:
         for fullName, nPairs, nQuads in zip(self.mainSheet.FullName, self.mainSheet.Pairs, self.mainSheet.Quads):
             if not isinstance(fullName, str) or fullName == "":
                 break
-            totalPairs += nPairs + 2 * nQuads
             globFilename = self.directory + "/" + fullName + "*.xls*"
             excelFiles = glob.glob(globFilename)
             if len(excelFiles) < 1 or len(excelFiles) > 1:
                 self.errorReport += f"Can't find unique excel file: {globFilename}\n"
                 continue
+            totalPairs += nPairs + 2 * nQuads
             fanSheet = pd.read_excel(excelFiles[0])
             pairsRank = [np.int64(fanSheet.Pick[ix]) for ix in range(self.GamesInPlan)]
             if not isinstance(fanSheet.QuadPick[0], np.float64) and not math.isnan(fanSheet.QuadPick[0]):
@@ -383,12 +384,12 @@ class Allocator:
                     status = tixRelax.optimize(max_seconds = 60)
                 except Exception as e:
                     self.errorReport += f"Mip relax optimize exception: {e}\n"
-                self.errorReport += status + "\n"
+                self.errorReport += f"{status} \n"
                 for var in slackVars:
                     if var.x is not None and var.x > 0.0:
                         mipConstraint = slackVarToConstraintMap[var]
                         self.errorReport += f"Violated constraint: {mipConstraint.name}\n"
-                        self.errorReport += textwrap.fill(f"{mipConstraint.expr}", width = 80, initial_indent="    ", subsequent_indent="    ")
+                        #self.errorReport += textwrap.fill(f"{mipConstraint.expr}", width = 80, initial_indent="    ", subsequent_indent="    ")
 
     def GameAllocationReport(self):
         if self.tixModel is None:
