@@ -66,7 +66,7 @@ class Allocator:
         self.MaxPairsPerGame = 0
         self.logicalMonths = {}
         self.fans = []
-        self.FansInPlan
+        self.FansInPlan = 0
         self.tixModel = None
         self.LoadSchedule(directory)
 
@@ -397,7 +397,7 @@ class Allocator:
         if self.tixModel is None:
             return ""
         costs = {}
-        gameAllocationReport = "### Game assigments:\n| Day | Date | Time | Opponent | Type | Seats |"
+        gameAllocationReport = "### Game assignments:\n| Day | Date | Time | Opponent | Type | Seats |"
         for ix in range(self.MaxPairsPerGame):
             gameAllocationReport += f" Pair{ix+1} | Sent{ix+1} |"
         gameAllocationReport += "\n| :-: | :-: | :-: | :-: | :-: | :-: |"  + " :-: | :-: |" * self.MaxPairsPerGame + "\n"
