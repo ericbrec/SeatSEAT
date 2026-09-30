@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk
+from tkinter import ttk, font
 from tkinter.scrolledtext import ScrolledText
 import tkinterweb
 
@@ -7,7 +7,8 @@ def create_app():
     root = tk.Tk()
     root.title("SeatSEAT")
     root.geometry("1100x800")
-
+    default_font = font.nametofont("TkDefaultFont")
+    default_font.configure(size=12)
     # --- Top Frames (Participants / Ticket Allocation) ---
     top_frame = ttk.Frame(root)
     top_frame.pack(fill="both", expand=True, padx=10, pady=10)
@@ -16,27 +17,27 @@ def create_app():
     left_frame = ttk.Frame(top_frame)
     left_frame.grid(row=0, column=0, sticky="nsew", padx=(0, 10))
 
-    participants_label = ttk.Label(left_frame, text="Participants", font=("Arial", 14, "bold"))
+    participants_label = ttk.Label(left_frame, text="Participants")
     participants_label.pack(pady=(0, 5))
 
     participants_html = tkinterweb.HtmlFrame(left_frame, horizontal_scrollbar="auto")
     participants_html.pack(fill="both", expand=True)
 
     load_btn = ttk.Button(left_frame, text="Load Participants")
-    load_btn.pack(pady=10)
+    load_btn.pack(pady=5)
 
     # Right column
     right_frame = ttk.Frame(top_frame)
     right_frame.grid(row=0, column=1, sticky="nsew", padx=(10, 0))
 
-    allocation_label = ttk.Label(right_frame, text="Ticket Allocation", font=("Arial", 14, "bold"))
+    allocation_label = ttk.Label(right_frame, text="Ticket Allocation")
     allocation_label.pack(pady=(0, 5))
 
     allocation_html = tkinterweb.HtmlFrame(right_frame, horizontal_scrollbar="auto")
     allocation_html.pack(fill="both", expand=True)
 
     allocate_btn = ttk.Button(right_frame, text="Copy to Clipboard")
-    allocate_btn.pack(pady=10)
+    allocate_btn.pack(pady=5)
 
     # Make columns expand evenly
     top_frame.columnconfigure(0, weight=1)
@@ -47,7 +48,7 @@ def create_app():
     error_frame = ttk.Frame(root)
     error_frame.pack(fill="both", expand=True, padx=10, pady=(0, 10))
 
-    error_label = ttk.Label(error_frame, text="Error Report", font=("Arial", 14, "bold"))
+    error_label = ttk.Label(error_frame, text="Error Report")
     error_label.pack(anchor="w")
 
     error_box = ScrolledText(error_frame, height=12, wrap="word")
