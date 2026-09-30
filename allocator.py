@@ -57,6 +57,20 @@ class SportsFan:
 
 class Allocator:
     def __init__(self, directory):
+        self.directory = "."
+        self.errorReport = ""
+        self.mainSheet = None
+        self.schedule = []
+        self.GamesInPlan = 0
+        self.PairsInPlan = 0
+        self.MaxPairsPerGame = 0
+        self.logicalMonths = {}
+        self.fans = []
+        self.FansInPlan
+        self.tixModel = None
+        self.LoadSchedule(directory)
+
+    def LoadSchedule(self, directory):
         self.directory = "examples/Mariners 2026"
         self.errorReport = ""
         globFilename = self.directory + "/Full Name*.xls*"
@@ -103,7 +117,7 @@ class Allocator:
         for gameCount in gamesPerMonth.values():
             varGamesPerMonth += (gameCount - meanGamesPerMonth) ** 2
         sigma = math.sqrt(varGamesPerMonth / totalMonths)
-        self.logicalMonths = {} 
+        self.logicalMonths = {}
         for month, gameCount in gamesPerMonth.items():
             if gameCount > meanGamesPerMonth - sigma:
                 self.logicalMonths[month] = month
@@ -120,6 +134,11 @@ class Allocator:
                     if newMonth in self.logicalMonths:
                         self.logicalMonths[month] = self.logicalMonths[newMonth]
                         break
+
+        # Clear the fans list and tickets model
+        self.fans = []
+        self.FansInPlan
+        self.tixModel = None
 
     def LoadFans(self):
         #########################################################
@@ -260,6 +279,7 @@ class Allocator:
                     extraConstraints.append(sheetConstraint.function(description, fanSheet.iat[row,1], sheetConstraint.comparator, fanSheet.iat[row,3], sheetConstraint.pairsOrQuads))
             self.fans.append(SportsFan(self.GamesInPlan, fullName, nPairs, nQuads, pairsRank, extraConstraints))
 
+        # Create Spare Pairs for leftover games
         self.FansInPlan = len(self.fans)
         leftOver = self.PairsInPlan - totalPairs
         if leftOver < 0:
@@ -270,6 +290,9 @@ class Allocator:
             nPairs = min(leftOver, maxSparePairs)
             self.fans.append(SportsFan(self.GamesInPlan, f"Spare Pair", nPairs, 0, pairsRank))
             leftOver -= nPairs
+
+        # Reset the tickets model
+        self.tixModel = None
 
     def GameRankingReport(self):
         gameRankingReport = "### Constraints:\n| Full Name | Pairs | Quads | Constraints |\n| :-: | :-: | :-: | :- |\n"
@@ -371,6 +394,8 @@ class Allocator:
                         self.errorReport += textwrap.fill(f"{mipConstraint.expr}", width = 80, initial_indent="    ", subsequent_indent="    ")
 
     def GameAllocationReport(self):
+        if self.tixModel is None:
+            return ""
         costs = {}
         gameAllocationReport = "### Game assigments:\n| Day | Date | Time | Opponent | Type | Seats |"
         for ix in range(self.MaxPairsPerGame):
