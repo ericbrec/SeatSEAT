@@ -258,7 +258,7 @@ class Allocator:
                 if fanSheet.iat[row,1] or not pd.isna(fanSheet.iat[row,3]):
                     description = f"{fullName}{'' if fanSheet.iat[row,1] else ' (unchecked)'}: {fanSheet.iat[row,2]} {fanSheet.iat[row,3]} {fanSheet.iat[row,4]}"
                     extraConstraints.append(sheetConstraint.function(description, fanSheet.iat[row,1], sheetConstraint.comparator, fanSheet.iat[row,3], sheetConstraint.pairsOrQuads))
-            self.fans.append(SportsFan(fullName, nPairs, nQuads, pairsRank, extraConstraints))
+            self.fans.append(SportsFan(self.GamesInPlan, fullName, nPairs, nQuads, pairsRank, extraConstraints))
 
         self.FansInPlan = len(self.fans)
         leftOver = self.PairsInPlan - totalPairs
@@ -268,7 +268,7 @@ class Allocator:
         while leftOver > 0:
             pairsRank = (self.GamesInPlan * [np.int64(1)])[:]
             nPairs = min(leftOver, maxSparePairs)
-            self.fans.append(SportsFan(f"Spare Pair", nPairs, 0, pairsRank))
+            self.fans.append(SportsFan(self.GamesInPlan, f"Spare Pair", nPairs, 0, pairsRank))
             leftOver -= nPairs
 
     def GameRankingReport(self):
@@ -295,19 +295,19 @@ class Allocator:
 
     def AllocateTickets(self):
         try:
-            self.tixModel = tixModel = mip.Model()
+            self.tixModel = mip.Model()
             tixVars = []
             for fan in self.fans:
-                tixVars += [tixModel.add_var(name = f"{fan.name}(pair {game.date.strftime('%x')} {game.time} {game.type})", var_type = mip.BINARY) for game in self.schedule]
-                tixVars += [tixModel.add_var(name = f"{fan.name}(quad {game.date.strftime('%x')} {game.time} {game.type})", var_type = mip.BINARY) for game in self.schedule]
-            slackVars = [tixModel.add_var(name = f"{fan.name}(slack+ {game.date.strftime('%x')} {game.time} {game.type})", var_type = mip.CONTINUOUS, ub = 0.0) for game in self.schedule]
-            slackVars += [tixModel.add_var(name = f"{fan.name}(slack- {game.date.strftime('%x')} {game.time} {game.type})", var_type = mip.CONTINUOUS, ub = 0.0) for game in self.schedule]
+                tixVars += [self.tixModel.add_var(name = f"{fan.name}(pair {game.date.strftime('%x')} {game.time} {game.type})", var_type = mip.BINARY) for game in self.schedule]
+                tixVars += [self.tixModel.add_var(name = f"{fan.name}(quad {game.date.strftime('%x')} {game.time} {game.type})", var_type = mip.BINARY) for game in self.schedule]
+            slackVars = [self.tixModel.add_var(name = f"{fan.name}(slack+ {game.date.strftime('%x')} {game.time} {game.type})", var_type = mip.CONTINUOUS, ub = 0.0) for game in self.schedule]
+            slackVars += [self.tixModel.add_var(name = f"{fan.name}(slack- {game.date.strftime('%x')} {game.time} {game.type})", var_type = mip.CONTINUOUS, ub = 0.0) for game in self.schedule]
 
             # All tickets must be allocated
 
             slackVarToConstraintMap = {}
             for ix in range(self.GamesInPlan):
-                mipConstraint = tixModel.add_constr(mip.xsum(tixVars[ix + 2 * iy * self.GamesInPlan] + 2.0 * tixVars[ix + self.GamesInPlan + 2 * iy * self.GamesInPlan] for iy in range(len(self.fans))) + slackVars[2 * ix] - slackVars[2 * ix + 1] == self.schedule[ix].pairs, name = f"Allocate all tickets game {ix}")
+                mipConstraint = self.tixModel.add_constr(mip.xsum(tixVars[ix + 2 * iy * self.GamesInPlan] + 2.0 * tixVars[ix + self.GamesInPlan + 2 * iy * self.GamesInPlan] for iy in range(len(self.fans))) + slackVars[2 * ix] - slackVars[2 * ix + 1] == self.schedule[ix].pairs, name = f"Allocate all tickets game {ix}")
                 for var in slackVars:
                     slackVarToConstraintMap[var] = mipConstraint
 
@@ -317,21 +317,21 @@ class Allocator:
                 for ix, constraint in enumerate(fan.constraints):
                     for coefDict in constraint.gameDictionaries:
                         if constraint.comparator == '==':
-                            slackVars.append(tixModel.add_var(name = f"slack+({constraint.description})", var_type = mip.CONTINUOUS, ub = 0.0))
-                            slackVars.append(tixModel.add_var(name = f"slack-({constraint.description})", var_type = mip.CONTINUOUS, ub = 0.0))
+                            slackVars.append(self.tixModel.add_var(name = f"slack+({constraint.description})", var_type = mip.CONTINUOUS, ub = 0.0))
+                            slackVars.append(self.tixModel.add_var(name = f"slack-({constraint.description})", var_type = mip.CONTINUOUS, ub = 0.0))
                             linFunc = mip.xsum(count * tixVars[ix + iy * 2 * self.GamesInPlan] for ix, count in coefDict.items()) + slackVars[-2] - slackVars[-1]
-                            mipConstraint = tixModel.add_constr(linFunc == constraint.value, name = f"{constraint.description}")
+                            mipConstraint = self.tixModel.add_constr(linFunc == constraint.value, name = f"{constraint.description}")
                             slackVarToConstraintMap[slackVars[-2]] = mipConstraint
                             slackVarToConstraintMap[slackVars[-1]] = mipConstraint
                         if constraint.comparator == '<=':
-                            slackVars.append(tixModel.add_var(name = f"slack({constraint.description})", var_type = mip.CONTINUOUS, ub = 0.0))
+                            slackVars.append(self.tixModel.add_var(name = f"slack({constraint.description})", var_type = mip.CONTINUOUS, ub = 0.0))
                             linFunc = mip.xsum(count * tixVars[ix + iy * 2 * self.GamesInPlan] for ix, count in coefDict.items()) - slackVars[-1]
-                            mipConstraint = tixModel.add_constr(linFunc <= constraint.value, name = f"{constraint.description}")
+                            mipConstraint = self.tixModel.add_constr(linFunc <= constraint.value, name = f"{constraint.description}")
                             slackVarToConstraintMap[slackVars[-1]] = mipConstraint
                         if constraint.comparator == '>=':
-                            slackVars.append(tixModel.add_var(name = f"slack({constraint.description})", var_type = mip.CONTINUOUS, ub = 0.0))
+                            slackVars.append(self.tixModel.add_var(name = f"slack({constraint.description})", var_type = mip.CONTINUOUS, ub = 0.0))
                             linFunc = mip.xsum(count * tixVars[ix + iy * 2 * self.GamesInPlan] for ix, count in coefDict.items()) + slackVars[-1]
-                            mipConstraint = tixModel.add_constr(linFunc >= constraint.value, name = f"{constraint.description}")
+                            mipConstraint = self.tixModel.add_constr(linFunc >= constraint.value, name = f"{constraint.description}")
                             slackVarToConstraintMap[slackVars[-1]] = mipConstraint
 
             # Establish the objective function
@@ -339,12 +339,12 @@ class Allocator:
             costs = []
             for fan in self.fans:
                 costs += fan.useRanking
-            tixModel.objective = mip.xsum(costs[ix] * tixVars[ix] for ix in range(len(tixVars))) + mip.xsum(100000.0 * slackVars[ix] for ix in range(len(slackVars)))
+            self.tixModel.objective = mip.xsum(costs[ix] * tixVars[ix] for ix in range(len(tixVars))) + mip.xsum(100000.0 * slackVars[ix] for ix in range(len(slackVars)))
         except Exception as e:
             self.errorReport += f"Mip setup exception: {e}\n"
 
         try:
-            status = tixModel.optimize()
+            status = self.tixModel.optimize()
         except Exception as e:
             self.errorReport += f"Mip optimize exception: {e}\n"
 
@@ -352,9 +352,9 @@ class Allocator:
             self.errorReport += f"No solution found: {status}\n"
             if status == mip.OptimizationStatus.INFEASIBLE:
                 self.errorReport += "Infeasible solution found.  Relaxing constraints to find a solution with minimum slack.\n"
-                tixRelax = tixModel
+                tixRelax = self.tixModel
                 # Save a copy of the infeasible solution for later notebook cells
-                tixModel = tixModel.copy() 
+                self.tixModel = self.tixModel.copy() 
                 # Reset the model, unrestrict the slack variables, and rerun the optimization to find the infeasible constraints
                 tixRelax.reset()
                 for var in slackVars:
@@ -374,13 +374,11 @@ class Allocator:
         costs = {}
         gameAllocationReport = "### Game assigments:\n| Day | Date | Time | Opponent | Type | Seats |"
         for ix in range(self.MaxPairsPerGame):
-            gameAllocationReport += f" Pair{ix+1} | ✉️ |"
+            gameAllocationReport += f" Pair{ix+1} | Sent{ix+1} |"
         gameAllocationReport += "\n| :-: | :-: | :-: | :-: | :-: | :-: |"  + " :-: | :-: |" * self.MaxPairsPerGame + "\n"
         for gix, game in enumerate(self.schedule):
             gameAllocationReport += f"| {game.weekday} | {game.date.strftime('%x')} | {game.time} | {game.opponent} | {game.type} | {game.seats} |"
             for mix, mvar in enumerate(self.tixModel.vars):
-                if mix > self.GamesInPlan * 2:
-                    break # Ignore slack vars
                 if mix % self.GamesInPlan == gix and mvar.x is not None and mvar.x > 0.5:
                     fix = mix // (2 * self.GamesInPlan)
                     if len(self.fans[fix].ranking) > self.GamesInPlan and mix % (2 * self.GamesInPlan) >= self.GamesInPlan:
@@ -393,9 +391,9 @@ class Allocator:
                         gameAllocationReport += " | |"
             gameAllocationReport += " ❌ |" * (self.MaxPairsPerGame - game.pairs) + "\n"
 
-            gameAllocationReport = "### Amount owed:\n| Full Name | Amount owed | Paid |\n"
-            gameAllocationReport += "| :- | -: | -: |\n"
-            for name, cost in sorted(costs.items()):
-                gameAllocationReport += f"| {name} | {locale.currency(cost, grouping=True)} | |\n"
+        gameAllocationReport += "### Amount owed:\n| Full Name | Amount owed | Paid |\n"
+        gameAllocationReport += "| :- | -: | -: |\n"
+        for name, cost in sorted(costs.items()):
+            gameAllocationReport += f"| {name} | {locale.currency(cost, grouping=True)} | |\n"
 
-            return gameAllocationReport
+        return gameAllocationReport
