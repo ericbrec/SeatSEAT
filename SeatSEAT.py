@@ -3,8 +3,8 @@ from tkinter import ttk, font
 from tkinter import filedialog
 from tkinter.scrolledtext import ScrolledText
 import tkinterweb
+from HTMLClipboard import PutHtml
 import markdown
-import klembord
 from allocator import Allocator
 
 class SeatSEAT(tk.Tk):
@@ -63,8 +63,6 @@ class SeatSEAT(tk.Tk):
 
     def format_report(self, snippet):
         return f"""
-            <html>
-            <head>
             <style>
             table, th, td {{
                 border: 1px solid black;
@@ -72,11 +70,7 @@ class SeatSEAT(tk.Tk):
                 padding: 2px;
             }}
             </style>
-            </head>
-            <body>
             {snippet}
-            </body>
-            </html>
         """
 
     def load_participants(self):
@@ -91,7 +85,7 @@ class SeatSEAT(tk.Tk):
             self.error_box.insert('end', self.allocator.errorReport)
 
     def copy_to_clipboard(self):
-        pass
+        PutHtml(self.allocation_html.save_page())
 
 if __name__ == "__main__":
     app = SeatSEAT()
