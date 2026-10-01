@@ -5,6 +5,7 @@ from tkinter.scrolledtext import ScrolledText
 import tkinterweb
 from HTMLClipboard import PutHtml
 import markdown
+from threading import Thread
 from allocator import Allocator
 
 class SeatSEAT(tk.Tk):
@@ -30,8 +31,10 @@ class SeatSEAT(tk.Tk):
         self.participants_html = tkinterweb.HtmlFrame(left_frame, textwrap=False, horizontal_scrollbar="auto")
         self.participants_html.pack(fill="both", expand=True)
 
-        load_btn = ttk.Button(left_frame, text="Load Participants", command=self.load_participants)
-        load_btn.pack(pady=(5, 0))
+        self.load_btn = ttk.Button(left_frame, text="Load Participants", command=self.load_participants)
+        self.load_btn.pack(pady=(5, 0))
+        self.bind("<<LoadDone>>", self.on_load_done)
+        self.bind("<<AllocationDone>>", self.on_allocation_done)
 
         # Right column
         right_frame = ttk.Frame(top_frame)
@@ -76,13 +79,31 @@ class SeatSEAT(tk.Tk):
     def load_participants(self):
         directory = filedialog.askdirectory(title="Load Participants")
         if directory:
-            self.allocator.LoadSchedule(directory)
-            self.allocator.LoadFans()
-            self.participants_html.load_html(self.format_report(markdown.markdown(self.allocator.GameRankingReport(), extensions=['tables'])))
-            self.allocator.AllocateTickets()
-            self.allocation_html.load_html(self.format_report(markdown.markdown(self.allocator.GameAllocationReport(), extensions=['tables'])))
-            self.error_box.delete('1.0', 'end')
-            self.error_box.insert('end', self.allocator.errorReport)
+            self.directory = directory
+            self.load_btn.config(state="disabled", text="Loading...")
+            Thread(target=self.load_task, daemon=True).start()
+
+    def load_task(self):
+        self.allocator.LoadSchedule(self.directory)
+        self.allocator.LoadFans()
+        self.event_generate("<<LoadDone>>", when="tail")
+
+    def on_load_done(self, event):
+        self.participants_html.load_html(self.format_report(markdown.markdown(self.allocator.GameRankingReport(), extensions=['tables'])))
+        self.error_box.delete('1.0', 'end')
+        self.error_box.insert('end', self.allocator.errorReport)
+        self.load_btn.config(state="disabled", text="Allocating...")
+        Thread(target=self.allocation_task, daemon=True).start()
+
+    def allocation_task(self):
+        self.allocator.AllocateTickets()
+        self.event_generate("<<AllocationDone>>", when="tail")
+
+    def on_allocation_done(self, event):
+        self.allocation_html.load_html(self.format_report(markdown.markdown(self.allocator.GameAllocationReport(), extensions=['tables'])))
+        self.error_box.delete('1.0', 'end')
+        self.error_box.insert('end', self.allocator.errorReport)
+        self.load_btn.config(state="normal", text="Load Participants")
 
     def copy_to_clipboard(self):
         PutHtml(self.allocation_html.save_page())
