@@ -13,7 +13,7 @@ class SeatSEAT(tk.Tk):
         tk.Tk.__init__(self, *args, **kw)
         self.title("SeatSEAT")
         self.geometry("1100x850")
-        self.iconbitmap("SeatSEAT.ico")
+        #self.iconbitmap("SeatSEAT.ico")
         default_font = font.nametofont("TkDefaultFont")
         default_font.configure(size=12)
         self.allocator = Allocator()
