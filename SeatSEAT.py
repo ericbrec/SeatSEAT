@@ -1,3 +1,4 @@
+from os import path
 import tkinter as tk
 from tkinter import ttk, font
 from tkinter import filedialog
@@ -13,7 +14,10 @@ class SeatSEAT(tk.Tk):
         tk.Tk.__init__(self, *args, **kw)
         self.title("SeatSEAT")
         self.geometry("1100x850")
-        #self.iconbitmap("SeatSEAT.ico")
+        if path.isfile("SeatSEAT.ico"):
+            self.iconbitmap("SeatSEAT.ico")
+        elif path.isfile("_internal/SeatSEAT.ico"):
+            self.iconbitmap("_internal/SeatSEAT.ico")
         default_font = font.nametofont("TkDefaultFont")
         default_font.configure(size=12)
         self.allocator = Allocator()

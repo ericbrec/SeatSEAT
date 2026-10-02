@@ -4,7 +4,10 @@
 a = Analysis(
     ['SeatSEAT.py'],
     pathex=[],
-    binaries=[( './.venv/Lib/site-packages/cbcbox/cbc_dist_avx2/bin/libCbc-0.dll', './cbcbox/cbc_dist_avx2/bin/' )],
+    binaries=[
+        ( './.venv/Lib/site-packages/cbcbox/cbc_dist_avx2/bin/libCbc-0.dll', './cbcbox/cbc_dist_avx2/bin/' ),
+        ( './SeatSEAT.ico', '.' )
+        ],
     datas=[],
     hiddenimports=[],
     hookspath=[],
