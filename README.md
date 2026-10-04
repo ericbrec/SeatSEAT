@@ -2,26 +2,29 @@
 
 **SeatSEAT**, the Seat Selection Equity Allocation Tool, is a Jupyter notebook and Excel template you can use to allocate season tickets fairly and optimally among a group of sports fans without going through a draft or auction.
 * The algorithm is based on Thomas Grandine's "Assigning season tickets fairly." Interfaces 28, no. 4 (1998): 15-20.
-* The Jupyter notebook is called "AllocateTickets.ipynb" and can found in the top folder.
 * The Excel template is called "Full Name - [Team] [Season].xlsx" and can be found in the examples folders.
+* The Windows application setup file can be downloaded from the [SeatSEAT GitHub releases page](https://github.com/ericbrec/SeatSEAT/releases)
+* The Jupyter notebook is called "AllocateTickets.ipynb" and can found in the top folder.
 
 Organizer Instructions
 ======================
-1. Download a copy of AllocateTickets.ipynb
-2. Change the value of directory at the beginning of the notebook to a file directory where you plan to store the Excel template and fan picks.
-3. Download a copy of "Full Name - [Team] [Season].xlsx" to your target directory and rename it to reflect the desired team and season.
-4. Fill out the Date, Time, Opponent, and Type columns in the template with your home game schedule. The Day column is calculated automatically. The Type column indicates the type of ticket which maps to a ticket price and number of pairs (see step 8). If all your games have the same price and number of pairs, just put "A" in the Type column for every game.
-5. Fill out the Promotions column in the template with whatever promotions have been announced, if any.
-6. The other game columns are calculated automatically--please don't change them. If you accidentally change them, you may need to start over.
-7. Fill out the far right FullName, Pairs, and Quads columns with the full names of your season ticket group and how many pairs and quads of tickets each fan has signed up to purchase for the coming season. The other columns are calculated automatically. If you only have two tickets per game, leave the Quads column(s) blank or zero.
-8. Fill out the far right Type, Price, and Pairs columns in their separate table under the FullName table. Provide a label for each type of game, how much one ticket of that game type costs, and the number of pairs available for each game of that type. Some examples:
+1. Download a copy of "Full Name - [Team] [Season].xlsx" to your target directory and rename it to reflect the desired team and season.
+2. Fill out the Date, Time, Opponent, and Type columns in the template with your home game schedule. The Day column is calculated automatically. The Type column indicates the type of ticket which maps to a ticket price and number of pairs (see step 8). If all your games have the same price and number of pairs, just put "A" in the Type column for every game.
+3. Fill out the Promotions column in the template with whatever promotions have been announced, if any.
+4. The other game columns are calculated automatically--please don't change them. If you accidentally change them, you may need to start over.
+5. Fill out the far right FullName, Pairs, and Quads columns with the full names of your season ticket group and how many pairs and quads of tickets each fan has signed up to purchase for the coming season. The other columns are calculated automatically. If you only have two tickets per game, leave the Quads column(s) blank or zero.
+6. Fill out the far right Type, Price, and Pairs columns in their separate table under the FullName table. Provide a label for each type of game, how much one ticket of that game type costs, and the number of pairs available for each game of that type. Some examples:
    * Say your season ticket group has two sets of tickets, 2 primo seats that cost $200/ticket, and 4 regular seats that cost $70/ticket. Then you'd have two types of tickets: Type:"Primo", Price:$200, Pairs:1; and Type:"Regular", Price:$70, Pairs:2. In the main games table, you'd list each game for which you have both sets of tickets twice, once with game Type "Primo" and once with game type "Regular".
    * Say your sports team charges three different prices depending upon the opponent, and you have four seats. Then you'd have three types, "A", "B", "C", enter the price for each type, and set the Pairs for each type to 2 (2 pairs = 4 seats). In the main games table, you'd set the game Type to "A", "B", or "C" accordingly.
    * Say all your game tickets have the same price and same number of pairs. Then put an "A" for the Type, the price per ticket for the Price, and 1 for Pairs if you have two seats and 2 for Pairs if you have if you have four seats. In the main games table, you'd set each game Type to "A".
-9.  Send your season ticket group members the FullName table (copy/paste it into a message), asking them to verify the spelling of their names and their allocation of pairs and quads. Adjust the FullName table as needed.
-10. Double check your game, promotions, fan, and ticket pricing information in your template. Custom sort the games list by day, time, and type (in that order). When everything seems proper, send the full template to your season ticket group along with the "Ticket Selection Instructions" below. Be sure to fill out the stadium name, seat location info, seat location description, and deadline date in the instructions before sending.
+7.  Send your season ticket group members the FullName table (copy/paste it into a message), asking them to verify the spelling of their names and their allocation of pairs and quads. Adjust the FullName table as needed.
+8. Double check your game, promotions, fan, and ticket pricing information in your template. Custom sort the games list by day, time, and type (in that order). When everything seems proper, send the full template to your season ticket group along with the "Ticket Selection Instructions" below. Be sure to fill out the stadium name, seat location info, seat location description, and deadline date in the instructions before sending.
+9. Two choices for running SeatSEAT (whichever you prefer):
+   1.  Download and run the latest SeatSEAT setup from the [SeatSEAT GitHub releases page](https://github.com/ericbrec/SeatSEAT/releases)
+   2.  Download a copy of AllocateTickets.ipynb
+10. If you are using AllocateTickets.ipynb, change the value of directory at the beginning of the notebook to a file directory where you are storing the Excel template and fan picks.
 11. As you receive filled out templates from members of your season ticket group, verify the file names have been changed properly and save the files in your target directory.
-12. Once you have received all the templates, run your copy of of AllocateTickets.ipynb. Feel free to use the generated markup to share the resulting ticket allocation and amount owed tables with your group. Ask if there are any mistakes, broken constraints, or missing information. If so, make the desired changes to the templates as needed and repeat until you have a fair and optimal ticket allocation. Often a single run is sufficient. Enjoy the season!
+12. Once you have received all the templates, run the SeatSEAT application or your copy of AllocateTickets.ipynb. Feel free to use the generated markup to share the resulting ticket allocation and amount owed tables with your group. Ask if there are any mistakes, broken constraints, or missing information. If so, make the desired changes to the templates as needed and repeat until you have a fair and optimal ticket allocation. Often a single run is sufficient. Enjoy the season!
 
 Ticket Selection Instructions
 =============================
@@ -34,7 +37,7 @@ Here is the procedure for ticket selection:
 1. Rename the attached spreadsheet, replacing "Full Name" with your full name exactly as listed in the far right "FullName" table. If the number of pairs and/or quads for you are incorrect in that table, please notify me (the organizer) immediately.
 2. Do not change anything in the sheet other than the Rank column (and optionally the QuadRank column), the Comments column, the tiebreaker rule, and any optional constraints you select.
 3. Known game day promotions are listed.  There may be additional giveaways and special events.
-4. Enter your numerical rank for each game for the entire Rank column (the lowest rank is your top choice). You can give groupings of similar games the same rank. For example, say your top priority are fireworks nights, your second priority are Sunday games, your third priority are division games, your fourth priority are all other games, and your last priority are games your can't (or won't) attend. You can rank the fireworks nights 1, the Sunday games 2, the remaining division games 3, the games you can't attend 5, and all the remaining games 4. 
+4. Enter your numerical rank for each game in the Rank column (the lowest rank is your top choice). You can give groupings of similar games the same rank. For example, say your top priority are fireworks nights, your second priority are Sunday games, your third priority are division games, your fourth priority are all other games, and your last priority are games your can't (or won't) attend. You can rank the fireworks nights 1, the Sunday games 2, the remaining division games 3, the games you can't attend 5, and all the remaining games 4. (Games you fail to rank will be treated as your least favorite choices automatically.)
 5. If your quad ranks differ from your pair ranks, also fill out the QuadRank column, otherwise leave that column blank. 
 6. Select your desired tiebreaking rule for games with the same rank. There are three rules:
    - **Random**: Games with the same rank are randomly ordered in priority.
