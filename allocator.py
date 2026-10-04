@@ -77,12 +77,16 @@ class Allocator:
     def LoadSchedule(self, directory):
         self.Initialize()
         self.directory = directory
-        globFilename = self.directory + "/Full Name*.xls*"
+        globFilename = f"{self.directory}/Full Name*.xls*"
         excelFiles = glob.glob(globFilename)
         if len(excelFiles) < 1 or len(excelFiles) > 1:
             self.errorReport += f"Can't find unique excel file: {globFilename}\n"
             return
-        self.mainSheet = pd.read_excel(excelFiles[0])
+        try:
+            self.mainSheet = pd.read_excel(excelFiles[0])
+        except Exception as e:
+            self.errorReport += f"{e}\n"
+            return
 
         ##### Find the constraint row #####
         for self.constraintRow in range(len(self.mainSheet.Date)):
@@ -257,15 +261,23 @@ class Allocator:
         for fullName, nPairs, nQuads in zip(self.mainSheet.FullName, self.mainSheet.Pairs, self.mainSheet.Quads):
             if not isinstance(fullName, str) or fullName == "":
                 break
-            globFilename = self.directory + "/" + fullName + "*.xls*"
+            globFilename = f"{self.directory}/{fullName}*.xls*"
             excelFiles = glob.glob(globFilename)
             if len(excelFiles) < 1 or len(excelFiles) > 1:
                 self.errorReport += f"Can't find unique excel file: {globFilename}\n"
                 continue
+            try:
+                fanSheet = pd.read_excel(excelFiles[0])
+            except Exception as e:
+                self.errorReport += f"{e}\n"
+                continue
+            if not isinstance(nPairs, (int,float,np.floating,np.integer)) or pd.isna(nPairs) or nPairs < 1:
+                nPairs = 0
+            if not isinstance(nQuads, (int,float,np.floating,np.integer)) or pd.isna(nQuads) or nQuads < 1:
+                nQuads = 0
             totalPairs += nPairs + 2 * nQuads
-            fanSheet = pd.read_excel(excelFiles[0])
             pairsRank = [np.int64(fanSheet.Pick[ix]) for ix in range(self.GamesInPlan)]
-            if not isinstance(fanSheet.QuadPick[0], np.float64) and not math.isnan(fanSheet.QuadPick[0]):
+            if not pd.isna(fanSheet.QuadPick[0]) and fanSheet.QuadPick[0] > 0:
                 quadsRank = [np.int64(fanSheet.QuadPick[ix]) for ix in range(self.GamesInPlan)]
                 pairsRank += quadsRank
 
