@@ -27,13 +27,16 @@ The repo directory structure is as follows:
 * AllocateTickets.ipynb (example Jupyter file)
 * allocate.py (allocation code)
 * HTMLClipboard.py (windows clipboard helper class)
-* SeatSEAT.py (windows app)
-* SeatSEAT.spec ([Inno Setup](https://jrsoftware.org/isinfo.php) spec file)
+* SeatSEAT.py (windows app code)
+* SeatSEAT.spec (pyinstaller spec file)
+* SeatSEAT.iss ([Inno Setup](https://jrsoftware.org/isinfo.php) configuration file)
 * examples (top-level directory with "Full Name" Excel template examples)
 
-We build the SeatSEAT executable using the pyinstaller package.
+We build the SeatSEAT executable with SeatSEAT.spec using the pyinstaller package:
 
-We build the setup executable with the SeatSEAT.spec for [Inno Setup](https://jrsoftware.org/isinfo.php).
+    pyinstaller --noconfirm SeatSEAT.spec
+
+We build the setup executable with the SeatSEAT.iss configuration file for [Inno Setup](https://jrsoftware.org/isinfo.php).
 
 We use [GitHub Flow](https://githubflow.github.io/) as our branching and submission strategy. Always make your changes in a feature branch off main and then submit a pull request when you're ready to release your improvements.
 
