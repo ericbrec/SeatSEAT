@@ -3,7 +3,7 @@
 ; Non-commercial use only.
 
 #define MyAppName "SeatSEAT"
-#define MyAppVersion "1.0"
+#define MyAppVersion "1.1"
 #define MyAppPublisher "Eric Brechner"
 #define MyAppURL "https://github.com/ericbrec/SeatSEAT"
 #define MyAppExeName "SeatSEAT.exe"
