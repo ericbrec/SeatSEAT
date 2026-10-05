@@ -19,10 +19,10 @@ Organizer Instructions
    * Say all your game tickets have the same price and same number of pairs. Then put an "A" for the Type, the price per ticket for the Price, and 1 for Pairs if you have two seats and 2 for Pairs if you have if you have four seats. In the main games table, you'd set each game Type to "A".
 7.  Send your season ticket group members the FullName table (copy/paste it into a message), asking them to verify the spelling of their names and their allocation of pairs and quads. Adjust the FullName table as needed.
 8. Double check your game, promotions, fan, and ticket pricing information in your template. Custom sort the games list by day, time, and type (in that order). When everything seems proper, send the full template to your season ticket group along with the "Ticket Selection Instructions" below. Be sure to fill out the stadium name, seat location info, seat location description, and deadline date in the instructions before sending.
-9. Two choices for running SeatSEAT (whichever you prefer):
+9. Choose between two ways of running SeatSEAT (whichever you prefer):
    1.  Download and run the latest SeatSEAT setup from the [SeatSEAT GitHub releases page](https://github.com/ericbrec/SeatSEAT/releases)
-   2.  Download a copy of AllocateTickets.ipynb
-10. If you are using AllocateTickets.ipynb, change the value of directory at the beginning of the notebook to a file directory where you are storing the Excel template and fan picks.
+   2.  Clone the SeatSEAT repo and run SeatSEAT.py or the AllocateTickets.ipynb Jupyter notebook directly (details in [CONTRIBUTING.md](./CONTRIBUTING.md))
+10. If you choose AllocateTickets.ipynb, change the value of directory at the beginning of the notebook to a file directory where you are storing the Excel template and fan picks.
 11. As you receive filled out templates from members of your season ticket group, verify the file names have been changed properly and save the files in your target directory.
 12. Once you have received all the templates, run the SeatSEAT application or your copy of AllocateTickets.ipynb. Feel free to use the generated markup to share the resulting ticket allocation and amount owed tables with your group. Ask if there are any mistakes, broken constraints, or missing information. If so, make the desired changes to the templates as needed and repeat until you have a fair and optimal ticket allocation. Often a single run is sufficient. Enjoy the season!
 
