@@ -1,6 +1,5 @@
 import math
 import locale
-import textwrap
 import numpy as np
 import mip
 from collections import namedtuple
@@ -401,7 +400,6 @@ class Allocator:
                     if var.x is not None and var.x > 0.0:
                         mipConstraint = slackVarToConstraintMap[var]
                         self.errorReport += f"Violated constraint: {mipConstraint.name}\n"
-                        #self.errorReport += textwrap.fill(f"{mipConstraint.expr}", width = 80, initial_indent="    ", subsequent_indent="    ")
 
     def GameAllocationReport(self):
         if self.tixModel is None:
