@@ -9,7 +9,7 @@
 Organizer Instructions
 ======================
 1. Download a copy of "Full Name - [Team] [Season].xlsx" to your target directory and rename it to reflect the desired team and season.
-2. Fill out the Date, Time, Opponent, and Type columns in the template with your home game schedule. The Day column is calculated automatically. The Type column indicates the type of ticket which maps to a ticket price and number of pairs (see step 8). If all your games have the same price and number of pairs, just put "A" in the Type column for every game.
+2. Fill out the Date, Time, Opponent, and Type columns in the template with your home game schedule (teams often have a sortable schedule page or offer a downloadable schedule). The Day column is calculated automatically. The Type column indicates the type of ticket which maps to a ticket price and number of pairs (see step 8). If all your games have the same price and number of pairs, just put "A" in the Type column for every game.
 3. Fill out the Promotions column in the template with whatever promotions have been announced, if any.
 4. The other game columns are calculated automatically--please don't change them. If you accidentally change them, you may need to start over.
 5. Fill out the far right FullName, Pairs, and Quads columns with the full names of your season ticket group and how many pairs and quads of tickets each fan has signed up to purchase for the coming season. The other columns are calculated automatically. If you only have two tickets per game, leave the Quads column(s) blank or zero.
