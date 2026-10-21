@@ -35,6 +35,7 @@ class SeatSEAT(tk.Tk):
 
         self.participants_html = tkinterweb.HtmlFrame(left_frame, textwrap=False, horizontal_scrollbar="auto")
         self.participants_html.pack(fill="both", expand=True)
+        self.participants_html.bind("<<Copy>>", self.participants_html_to_clipboard)
 
         self.load_btn = ttk.Button(left_frame, text="Load Participants", command=self.load_participants)
         self.load_btn.pack(pady=(5, 0))
@@ -50,8 +51,9 @@ class SeatSEAT(tk.Tk):
 
         self.allocation_html = tkinterweb.HtmlFrame(right_frame, textwrap=False, horizontal_scrollbar="auto")
         self.allocation_html.pack(fill="both", expand=True)
+        self.allocation_html.bind("<<Copy>>", self.allocation_html_to_clipboard)
 
-        allocate_btn = ttk.Button(right_frame, text="Copy to Clipboard", command=self.copy_to_clipboard)
+        allocate_btn = ttk.Button(right_frame, text="Copy to Clipboard", command=self.allocation_html_to_clipboard)
         allocate_btn.pack(pady=(5, 0))
 
         # Make columns expand evenly
@@ -110,8 +112,13 @@ class SeatSEAT(tk.Tk):
         self.error_box.insert('end', self.allocator.errorReport)
         self.load_btn.config(state="normal", text="Load Participants")
 
-    def copy_to_clipboard(self):
+    def participants_html_to_clipboard(self, event = None):
+        PutHtml(self.participants_html.save_page())
+        return "break"
+
+    def allocation_html_to_clipboard(self, event = None):
         PutHtml(self.allocation_html.save_page())
+        return "break"
 
 if __name__ == "__main__":
     app = SeatSEAT()
