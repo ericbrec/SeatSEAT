@@ -88,7 +88,7 @@ class Allocator:
             return
 
         ##### Find the constraint row #####
-        for self.constraintRow in range(len(self.mainSheet.Date)):
+        for self.constraintRow in range(100):
             if self.mainSheet.iat[self.constraintRow,2] == "At least":
                 break
 
