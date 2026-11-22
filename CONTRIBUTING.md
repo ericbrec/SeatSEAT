@@ -21,7 +21,7 @@ You'll likely want to use a virtual environment (.venv) for the SeatSEAT project
 
 SeatSEAT depends on a few Python packages (found on PyPi.org). You’ll want to pip install them.
 
-    pip install numpy mip pandas IPython win32clipboard tkinter tkinterweb markdown
+    pip install numpy mip pandas IPython ics win32clipboard tkinter tkinterweb markdown
 
 The repo directory structure is as follows:
 * AllocateTickets.ipynb (example Jupyter file)

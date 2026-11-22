@@ -3,7 +3,7 @@
 ; Non-commercial use only.
 
 #define MyAppName "SeatSEAT"
-#define MyAppVersion "1.2"
+#define MyAppVersion "1.3"
 #define MyAppPublisher "Eric Brechner"
 #define MyAppURL "https://github.com/ericbrec/SeatSEAT"
 #define MyAppExeName "SeatSEAT.exe"
@@ -58,4 +58,3 @@ Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: de
 
 [Run]
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#DoubleAmp(MyAppName)}}"; Flags: nowait postinstall skipifsilent
-

@@ -1,6 +1,6 @@
 # SeatSEAT
 
-**SeatSEAT**, the Seat Selection Equity Allocation Tool, is an Excel template and a Windows application and/or Jupyter notebook you can use to allocate season tickets fairly and optimally among a group of sports fans without going through a draft or auction.
+**SeatSEAT**, the Seat Selection Equity Allocation Tool, is an Excel template and a Windows application and/or Jupyter notebook you can use to allocate season tickets fairly and optimally among a group of sports fans without going through a draft or auction. It also produces .ics files for each participant to automatically add allocated games to their calendars.
 * The algorithm is based on Thomas Grandine's "Assigning season tickets fairly." Interfaces 28, no. 4 (1998): 15-20.
 * The Excel template is called "Full Name - [Team] [Season].xlsx" and can be found in the examples folders.
 * The Windows application setup file can be downloaded from the [SeatSEAT GitHub releases page](https://github.com/ericbrec/SeatSEAT/releases)
@@ -13,7 +13,7 @@ Organizer Instructions
 3. Fill out the Promotions column in the template with whatever promotions have been announced, if any.
 4. The other game columns are calculated automatically--please don't change them. If you accidentally change them, you may need to start over.
 5. Fill out the far right FullName, Pairs, and Quads columns with the full names of your season ticket group and how many pairs and quads of tickets each fan has signed up to purchase for the coming season. The other columns are calculated automatically. If you only have two tickets per game, leave the Quads column(s) blank or zero. Any unallocated tickets will be assigned to "Spare Pair".
-6. Fill out the far right Type, Price, and Pairs columns in their separate table under the FullName table. Provide a label for each type of game, how much one ticket of that game type costs, and the number of pairs available for each game of that type. Some examples:
+6. Fill out the far right Type, Price, and Pairs columns in their separate table under the FullName table. The other columns are calculated automatically. The Type is a label for each type of game. The Price is how much one ticket of that game type costs. The Pairs is the number of pairs available for each game of that type. Some examples:
    * Say your season ticket group has two sets of tickets, 2 primo seats that cost $200/ticket, and 4 regular seats that cost $70/ticket. Then you'd have two types of tickets: Type:"Primo", Price:$200, Pairs:1; and Type:"Regular", Price:$70, Pairs:2. In the main games table, you'd list each game for which you have both sets of tickets twice, once with game Type "Primo" and once with game type "Regular".
    * Say your sports team charges three different prices depending upon the opponent, and you have four seats. Then you'd have three types, "A", "B", "C", enter the price for each type, and set the Pairs for each type to 2 (2 pairs = 4 seats). In the main games table, you'd set the game Type to "A", "B", or "C" accordingly.
    * Say all your game tickets have the same price and same number of pairs. Then put an "A" for the Type, the price per ticket for the Price, and 1 for Pairs if you have two seats and 2 for Pairs if you have if you have four seats. In the main games table, you'd set each game Type to "A".
@@ -24,7 +24,7 @@ Organizer Instructions
    2.  Clone the SeatSEAT repo and run SeatSEAT.py or the AllocateTickets.ipynb Jupyter notebook directly (details in [CONTRIBUTING.md](./CONTRIBUTING.md))
 10. If you choose AllocateTickets.ipynb, change the value of directory at the beginning of the notebook to a file directory where you are storing the Excel template and fan picks.
 11. As you receive filled out templates from members of your season ticket group, verify the file names have been changed properly and save the files in your target directory.
-12. Once you have received all the templates, run the SeatSEAT application or your copy of AllocateTickets.ipynb. Feel free to use the generated markup to share the resulting ticket allocation and amount owed tables with your group. Ask if there are any mistakes, broken constraints, or missing information. If so, make the desired changes to the templates as needed and repeat until you have a fair and optimal ticket allocation. Often a single run is sufficient. Enjoy the season!
+12. Once you have received all the templates, run the SeatSEAT application or your copy of AllocateTickets.ipynb. Feel free to use the generated markup to share the resulting ticket allocation and amount owed tables with your group. Ask if there are any mistakes, broken constraints, or missing information. If so, make the desired changes to the templates as needed and repeat until you have a fair and optimal ticket allocation. Often a single run is sufficient. Send your group their final  allocation, amount owed, and optionally their .ics files found in the same directory as the fan picks to automatically add each person's games to their calendar. Enjoy the season!
 
 Ticket Selection Instructions
 =============================
