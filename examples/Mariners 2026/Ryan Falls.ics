@@ -1,0 +1,108 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Andrés Muñoz POP! Collectible 3-Day Giveaway (First 10\,000 Fans\, presented by Funko)\nType: B\, Attendees: Fritz Klein (2) Ryan Falls (21)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Fritz Klein (2) Ryan Falls (21)
+DTSTART:20260910T201000Z
+SUMMARY:Game vs Rangers 
+UID:65b4cfb4-3502-4ee0-9ac4-450b2986ba3d@65b4.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: B\, Attendees: Eric Brechner (31) Ryan Falls (52)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Eric Brechner (31) Ryan Falls (52)
+DTSTART:20260422T014000Z
+SUMMARY:Game vs Athletics 
+UID:4b4c3056-7038-4e09-a659-9c66a1783fca@4b4c.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Cal Raleigh “60 Home Run” Bobblehead Night (First 40\,000 Fans\, presented by Alaska Airlines)\nType: B\, Attendees: Ryan Falls (1) Ryan Falls (1)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Ryan Falls (1) Ryan Falls (1)
+DTSTART:20260329T014000Z
+SUMMARY:Game vs Guardians 
+UID:f8cc5986-bd75-416b-b51b-93bb97ecc4ea@f8cc.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: C\, Attendees: Eric Brechner (21) Ryan Falls (20)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Eric Brechner (21) Ryan Falls (20)
+DTSTART:20260924T021000Z
+SUMMARY:Game vs Astros 
+UID:4ba6afe6-dc96-4e17-9caf-9bb4d8ac57f7@4ba6.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Ryan Falls (17) Ryan Falls (17)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Ryan Falls (17) Ryan Falls (17)
+DTSTART:20260603T014000Z
+SUMMARY:Game vs Mets 
+UID:6bc2d677-8951-4cee-b5ee-27614b45c67d@6bc2.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Ryan Falls (4) Ryan Falls (4)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Ryan Falls (4) Ryan Falls (4)
+DTSTART:20260808T021000Z
+SUMMARY:Game vs Rays 
+UID:acbb850b-c5c8-4414-a809-82a191924b7b@acbb.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: B\, Attendees: Eric Brechner (37) Ryan Falls (5)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Eric Brechner (37) Ryan Falls (5)
+DTSTART:20260826T014000Z
+SUMMARY:Game vs Phillies 
+UID:35a921a0-ff75-40a0-be2d-35eb20319d04@35a9.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Fireworks Night (presented by T-Mobile)\nType: A\, Attendees: Al Erisman (7) Ryan Falls (6)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Al Erisman (7) Ryan Falls (6)
+DTSTART:20260718T021000Z
+SUMMARY:Game vs Giants 
+UID:b657f0de-b059-4e0b-afa2-f9f4cb60bdfe@b657.org
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,147 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: D\, Attendees: Mike Neff (12) Mike Neff (12)
+DURATION:PT3H
+LOCATION:Type: D\, Attendees: Mike Neff (12) Mike Neff (12)
+DTSTART:20260331T014000Z
+SUMMARY:Game vs Yankees 
+UID:ff47d34d-2fbf-4a5b-aab9-8b4d5d25339a@ff47.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: C\, Attendees: Michael Jones (2) Mike Neff (6)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Michael Jones (2) Mike Neff (6)
+DTSTART:20260621T021000Z
+SUMMARY:Game vs Red Sox 
+UID:1d612d6b-cece-449e-a402-148829076933@1d61.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Julio Rodríguez ’90s Jersey Night (First 15\,000 Fans\, presented by KeyBank)\nType: C\, Attendees: Mike Neff (1) Mike Neff (1)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Mike Neff (1) Mike Neff (1)
+DTSTART:20260531T021000Z
+SUMMARY:Game vs D-backs 
+UID:0788e6df-967d-4bca-aeb3-ba9e2882099c@0788.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Michael Jones (1) Mike Neff (7)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Michael Jones (1) Mike Neff (7)
+DTSTART:20260719T000800Z
+SUMMARY:Game vs Giants 
+UID:76216f58-d35c-4989-b549-8030fdc44d48@7621.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Fireworks Night (presented by T-Mobile)\nType: A\, Attendees: Cole Graves (6) Mike Neff (15)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Cole Graves (6) Mike Neff (15)
+DTSTART:20260926T021000Z
+SUMMARY:Game vs Angels 
+UID:e4848761-ff29-4ce7-bc65-b5c2f9353ac9@e484.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Randy Johnson Number Retirement Ceremony Night\nType: A\, Attendees: Mike Neff (1) Tom Grandine (2)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Mike Neff (1) Tom Grandine (2)
+DTSTART:20260503T014000Z
+SUMMARY:Game vs Royals 
+UID:68ecd8ea-f392-422f-8b13-0b083f514395@68ec.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Salute to Armed Forces Night – Military Cap Giveaway (First 10\,000 Fans\, presented by Boeing)\nType: D\, Attendees: Mike Neff (8) Tom Grandine (9)
+DURATION:PT3H
+LOCATION:Type: D\, Attendees: Mike Neff (8) Tom Grandine (9)
+DTSTART:20260516T231500Z
+SUMMARY:Game vs Padres 
+UID:396d0d84-cd4e-4244-956a-096ef6f7f280@396d.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Kingdome Fanny Pack Hat Night (First 10\,000 Fans\, presented by Global FCU)\nType: B\, Attendees: Michael Erisman (4) Mike Neff (21)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Michael Erisman (4) Mike Neff (21)
+DTSTART:20260418T014000Z
+SUMMARY:Game vs Rangers 
+UID:be759ec9-5e87-4d74-8e59-72d2b20f0849@be75.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Ichiro Replica Statue Night (First 40\,000 Fans)\nType: D\, Attendees: Mike Neff (3) Mike Neff (3)
+DURATION:PT3H
+LOCATION:Type: D\, Attendees: Mike Neff (3) Mike Neff (3)
+DTSTART:20260411T014000Z
+SUMMARY:Game vs Astros 
+UID:e23ef794-6aed-4f80-a9fb-07c107ab59ed@e23e.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: AL West Champs Replica Banner Night (First 20\,000 Fans\, presented by T-Mobile)\nType: B\, Attendees: Mike Neff (22) Mike Neff (22)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Mike Neff (22) Mike Neff (22)
+DTSTART:20260328T014500Z
+SUMMARY:Game vs Guardians 
+UID:e084e060-8748-4e34-83a8-4e7590227bcb@e084.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Fireworks Night (presented by T-Mobile)\nType: A\, Attendees: Eric Brechner (55) Mike Neff (17)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Eric Brechner (55) Mike Neff (17)
+DTSTART:20260704T021000Z
+SUMMARY:Game vs Blue Jays 
+UID:7a4266f0-aa22-42a9-ba87-521cec539c46@7a42.org
+END:VEVENT
+END:VCALENDAR

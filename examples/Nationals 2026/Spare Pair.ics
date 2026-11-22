@@ -1,0 +1,95 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Phil Goldman (17) Spare Pair (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Phil Goldman (17) Spare Pair (1)
+DTSTART:20260521T230500Z
+SUMMARY:Game vs Mets
+UID:d6c8ead8-4e86-4326-a5fc-1a4683b8676c@d6c8.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bob Lowry (22) Spare Pair (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bob Lowry (22) Spare Pair (1)
+DTSTART:20260830T203500Z
+SUMMARY:Game vs Marlins
+UID:d19d9a44-4803-4075-a4ff-d7d331bfb4b6@d19d.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Spare Pair (1) Spare Pair (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Spare Pair (1) Spare Pair (1)
+DTSTART:20260827T200500Z
+SUMMARY:Game vs Rockies
+UID:e40d9a83-2f76-4c83-a50e-a5d1ba6ebd77@e40d.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bob Lowry (10) Spare Pair (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bob Lowry (10) Spare Pair (1)
+DTSTART:20260813T230500Z
+SUMMARY:Game vs Cubs
+UID:dd3c6b1e-210b-4db0-a734-534617228c74@dd3c.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Scott Ableman (12) Spare Pair (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Scott Ableman (12) Spare Pair (1)
+DTSTART:20260405T203500Z
+SUMMARY:Game vs Dodgers
+UID:8f6b5657-a61a-4f99-bf39-a9bdeeef7516@8f6b.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bob Lowry (5) Spare Pair (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bob Lowry (5) Spare Pair (1)
+DTSTART:20260614T203500Z
+SUMMARY:Game vs Mariners
+UID:58cfc032-9eb9-47b6-9239-443253ce4278@58cf.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bob Lowry (21) Spare Pair (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bob Lowry (21) Spare Pair (1)
+DTSTART:20260809T203500Z
+SUMMARY:Game vs Reds
+UID:4e98d355-d45b-424b-8ff0-ddb86b73b64f@4e98.org
+END:VEVENT
+END:VCALENDAR

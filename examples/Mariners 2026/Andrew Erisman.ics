@@ -1,0 +1,121 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Andrew Erisman (11) Andrew Erisman (11)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Andrew Erisman (11) Andrew Erisman (11)
+DTSTART:20260927T191000Z
+SUMMARY:Game vs Angels 
+UID:188878f9-807d-4ba6-bc9a-01d091495efd@1888.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Andrew Erisman (4) Andrew Erisman (4)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Andrew Erisman (4) Andrew Erisman (4)
+DTSTART:20260705T210000Z
+SUMMARY:Game vs Blue Jays 
+UID:66c1ca10-1c75-4855-8493-9509d4f28bc7@66c1.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Andrés Muñoz POP! Collectible 3-Day Giveaway (First 10\,000 Fans\, presented by Funko)\nType: B\, Attendees: Andrew Erisman (14) Andrew Erisman (14)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Andrew Erisman (14) Andrew Erisman (14)
+DTSTART:20260909T014000Z
+SUMMARY:Game vs Rangers 
+UID:914f592c-ad32-4593-b292-1f31fd136161@914f.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: D\, Attendees: Andrew Erisman (18) Andrew Erisman (18)
+DURATION:PT3H
+LOCATION:Type: D\, Attendees: Andrew Erisman (18) Andrew Erisman (18)
+DTSTART:20260401T014000Z
+SUMMARY:Game vs Yankees 
+UID:c571e6bd-06ab-4c30-b4d2-a6e06609968c@c571.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: C\, Attendees: Andrew Erisman (8) Andrew Erisman (8)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Andrew Erisman (8) Andrew Erisman (8)
+DTSTART:20260925T014000Z
+SUMMARY:Game vs Angels 
+UID:382f45b6-9171-49d1-a924-d04d587cee73@382f.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Fireworks Night (presented by T-Mobile)\nType: B\, Attendees: Andrew Erisman (1) Andrew Erisman (1)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Andrew Erisman (1) Andrew Erisman (1)
+DTSTART:20260620T021000Z
+SUMMARY:Game vs Red Sox 
+UID:d88d13e7-b930-4a44-8ec6-d8702e7a5399@d88d.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Cal Raleigh POP! Collectible 3-Day Giveaway (First 10\,000 Fans\, presented by Funko)\nType: C\, Attendees: Andrew Erisman (29) Andrew Erisman (29)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Andrew Erisman (29) Andrew Erisman (29)
+DTSTART:20260630T014000Z
+SUMMARY:Game vs Angels 
+UID:84e1cac8-fb0f-4e26-9b2d-e7be40b953f4@84e1.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Josh Naylor Bobblehead 2-Day Giveaway (First 10\,000 Fans\, presented by Toyota Dealers)\nType: B\, Attendees: Andrew Erisman (25) Andrew Erisman (25)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Andrew Erisman (25) Andrew Erisman (25)
+DTSTART:20260520T014000Z
+SUMMARY:Game vs White Sox 
+UID:2b0db2c0-5651-4c88-99da-3b8d75ebed04@2b0d.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: B\, Attendees: Andrew Erisman (6) Andrew Erisman (6)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Andrew Erisman (6) Andrew Erisman (6)
+DTSTART:20260823T014000Z
+SUMMARY:Game vs Cubs 
+UID:c66cc966-5572-4c83-9198-114e5916d958@c66c.org
+END:VEVENT
+END:VCALENDAR

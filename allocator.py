@@ -5,6 +5,8 @@ import mip
 from collections import namedtuple
 import glob
 import pandas as pd
+from datetime import datetime, timedelta
+from ics import Calendar, Event, DisplayAlarm
 
 # Define a class to contain constraints
 class Constraint:
@@ -94,15 +96,15 @@ class Allocator:
 
         ##### Read the season schedule and store it as a list of games
         locale.setlocale(locale.LC_ALL, '')
-        Game = namedtuple('Game', ('weekday', 'date', 'gameDay', 'time', 'opponent', 'type', 'price', 'pairs', 'seats'))
+        Game = namedtuple('Game', ('weekday', 'date', 'gameDay', 'time', 'opponent', 'type', 'price', 'pairs', 'seats', 'promotions'))
         openingDay = self.mainSheet.Date[0]
         gamesPerMonth = {}
         totalMonths = 0
-        for weekday, date, time, opponent, type, price, pairs, seats in zip(self.mainSheet.Day, self.mainSheet.Date, self.mainSheet.Time, self.mainSheet.Opponent, self.mainSheet.Type, self.mainSheet.Price, self.mainSheet.GamePairs, self.mainSheet.Seats):
+        for weekday, date, time, opponent, type, price, pairs, seats, promotions in zip(self.mainSheet.Day, self.mainSheet.Date, self.mainSheet.Time, self.mainSheet.Opponent, self.mainSheet.Type, self.mainSheet.Price, self.mainSheet.GamePairs, self.mainSheet.Seats, self.mainSheet.Promotions):
             if not isinstance(weekday, str) or weekday == "" or pd.isna(date):
                 break
             pairs = int(pairs)
-            self.schedule.append(Game(weekday, date, (date - openingDay).days, time.strftime("%I:%M %p"), opponent, type, price, pairs, seats))
+            self.schedule.append(Game(weekday, date, (date - openingDay).days, time, opponent, type, price, pairs, seats, promotions))
             self.GamesInPlan += 1
             self.PairsInPlan += pairs
             self.MaxPairsPerGame = max(self.MaxPairsPerGame, pairs)
@@ -314,7 +316,7 @@ class Allocator:
             gameRankingReport += f" {fan.name} |"
         gameRankingReport += "\n| :-: | :-: | :-: | :-: | :-: |"  + " :-: |" * self.FansInPlan + "\n"
         for gix, game in enumerate(self.schedule):
-            gameRankingReport += f"| {game.weekday} | {game.date.strftime('%x')} | {game.time} | {game.opponent} | {game.type} |"
+            gameRankingReport += f"| {game.weekday} | {game.date.strftime('%x')} | {game.time.strftime('%I:%M %p')} | {game.opponent} | {game.type} |"
             for fan in self.fans[:self.FansInPlan]:
                 gameRankingReport += f"{int(fan.ranking[gix])}"
                 if len(fan.ranking) > self.GamesInPlan:
@@ -329,10 +331,10 @@ class Allocator:
             self.tixModel.verbose = 0
             tixVars = []
             for fan in self.fans:
-                tixVars += [self.tixModel.add_var(name = f"{fan.name}(pair {game.date.strftime('%x')} {game.time} {game.type})", var_type = mip.BINARY) for game in self.schedule]
-                tixVars += [self.tixModel.add_var(name = f"{fan.name}(quad {game.date.strftime('%x')} {game.time} {game.type})", var_type = mip.BINARY) for game in self.schedule]
-            slackVars = [self.tixModel.add_var(name = f"{fan.name}(slack+ {game.date.strftime('%x')} {game.time} {game.type})", var_type = mip.CONTINUOUS, ub = 0.0) for game in self.schedule]
-            slackVars += [self.tixModel.add_var(name = f"{fan.name}(slack- {game.date.strftime('%x')} {game.time} {game.type})", var_type = mip.CONTINUOUS, ub = 0.0) for game in self.schedule]
+                tixVars += [self.tixModel.add_var(name = f"{fan.name}(pair {game.date.strftime('%x')} {game.time.strftime('%I:%M %p')} {game.type})", var_type = mip.BINARY) for game in self.schedule]
+                tixVars += [self.tixModel.add_var(name = f"{fan.name}(quad {game.date.strftime('%x')} {game.time.strftime('%I:%M %p')} {game.type})", var_type = mip.BINARY) for game in self.schedule]
+            slackVars = [self.tixModel.add_var(name = f"{fan.name}(slack+ {game.date.strftime('%x')} {game.time.strftime('%I:%M %p')} {game.type})", var_type = mip.CONTINUOUS, ub = 0.0) for game in self.schedule]
+            slackVars += [self.tixModel.add_var(name = f"{fan.name}(slack- {game.date.strftime('%x')} {game.time.strftime('%I:%M %p')} {game.type})", var_type = mip.CONTINUOUS, ub = 0.0) for game in self.schedule]
 
             # All tickets must be allocated
 
@@ -380,6 +382,7 @@ class Allocator:
             self.errorReport += f"Mip optimize exception: {e}\n"
 
         if status != mip.OptimizationStatus.OPTIMAL:
+            # Figure out and report why no optimal assignment was found.
             self.errorReport += f"No solution found: {status}\n"
             if status == mip.OptimizationStatus.INFEASIBLE:
                 self.errorReport += "Infeasible solution found.  Relaxing constraints to find a solution with minimum slack.\n"
@@ -400,6 +403,39 @@ class Allocator:
                     if var.x is not None and var.x > 0.0:
                         mipConstraint = slackVarToConstraintMap[var]
                         self.errorReport += f"Violated constraint: {mipConstraint.name}\n"
+        else:
+            # Output iCalendar (.ics) files for each fan with their assigned games.
+            fanCalendars = dict()
+            for fan in self.fans:
+                if fan.name not in fanCalendars:
+                    fanCalendars[fan.name] = Calendar()
+            for gix, game in enumerate(self.schedule):
+                fanNames = set()
+                location = f"Type: {game.type}, Attendees:"
+                for mix, mvar in enumerate(self.tixModel.vars):
+                    if mix % self.GamesInPlan == gix and mvar.x is not None and mvar.x > 0.5:
+                        fix = mix // (2 * self.GamesInPlan)
+                        if len(self.fans[fix].ranking) > self.GamesInPlan and mix % (2 * self.GamesInPlan) >= self.GamesInPlan:
+                            gix += self.GamesInPlan
+                        fanNames.add(self.fans[fix].name)
+                        location += f" {self.fans[fix].name} ({self.fans[fix].ranking[gix]})"
+                        if mix % (2 * self.GamesInPlan) >= self.GamesInPlan:
+                            location += f" {self.fans[fix].name} ({self.fans[fix].ranking[gix]})"
+                for fanName in fanNames:
+                    event = Event()
+                    event.name = f"Game vs {game.opponent}"
+                    event.begin = datetime.combine(game.date, game.time).astimezone()
+                    event.duration = timedelta(hours=3)
+                    event.description = f"Promotions: {'None' if pd.isna(game.promotions) else game.promotions}\n{location}"
+                    event.location = location
+                    event.alarms.append(DisplayAlarm(trigger=timedelta(minutes=90), display_text="Reminder"))
+                    fanCalendars[fanName].events.add(event)
+            for fanName, fanCalendar in fanCalendars.items():
+                try:
+                    with open(f"{self.directory}/{fanName}.ics", "w", encoding="utf-8") as icsFile:
+                        icsFile.write(fanCalendar.serialize())
+                except Exception as e:
+                    self.errorReport += f"Create calendar exception: {e}\n"
 
     def GameAllocationReport(self):
         if self.tixModel is None:
@@ -410,7 +446,7 @@ class Allocator:
             gameAllocationReport += f" Pair{ix+1} | Sent{ix+1} |"
         gameAllocationReport += "\n| :-: | :-: | :-: | :-: | :-: | :-: |"  + " :-: | :-: |" * self.MaxPairsPerGame + "\n"
         for gix, game in enumerate(self.schedule):
-            gameAllocationReport += f"| {game.weekday} | {game.date.strftime('%x')} | {game.time} | {game.opponent} | {game.type} | {game.seats} |"
+            gameAllocationReport += f"| {game.weekday} | {game.date.strftime('%x')} | {game.time.strftime('%I:%M %p')} | {game.opponent} | {game.type} | {game.seats} |"
             for mix, mvar in enumerate(self.tixModel.vars):
                 if mix % self.GamesInPlan == gix and mvar.x is not None and mvar.x > 0.5:
                     fix = mix // (2 * self.GamesInPlan)

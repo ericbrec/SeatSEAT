@@ -1,0 +1,160 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: David Dorris (9) Marcus Farbstein (22)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: David Dorris (9) Marcus Farbstein (22)
+DTSTART:20260829T014500Z
+SUMMARY:Game vs Marlins
+UID:5466fe7a-7330-4d02-96f4-465d21adce5f@5466.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: David Dorris (18) Marcus Farbstein (10)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: David Dorris (18) Marcus Farbstein (10)
+DTSTART:20260507T014500Z
+SUMMARY:Game vs Twins
+UID:5ad7e482-9578-4e28-a817-6cf741c46c5a@5ad7.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: David Dorris (1) Marcus Farbstein (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: David Dorris (1) Marcus Farbstein (1)
+DTSTART:20260404T230500Z
+SUMMARY:Game vs Dodgers
+UID:e947c44b-d80a-4e29-863b-914b643705eb@e947.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: David Dorris (6) Marcus Farbstein (5)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: David Dorris (6) Marcus Farbstein (5)
+DTSTART:20260808T014500Z
+SUMMARY:Game vs Reds
+UID:86d7d10c-e2f8-4c49-b853-2cb2ea932c5d@86d7.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bridgette Reilly (22) Marcus Farbstein (8)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bridgette Reilly (22) Marcus Farbstein (8)
+DTSTART:20260423T014500Z
+SUMMARY:Game vs Braves
+UID:edb66989-599b-4903-bc07-761b48b73c84@edb6.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bob Lowry (2) Marcus Farbstein (9)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bob Lowry (2) Marcus Farbstein (9)
+DTSTART:20260502T014500Z
+SUMMARY:Game vs Brewers
+UID:ac69b507-eeca-4091-a054-3c16e1f0ffce@ac69.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: David Dorris (10) Marcus Farbstein (25)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: David Dorris (10) Marcus Farbstein (25)
+DTSTART:20260912T014500Z
+SUMMARY:Game vs Angels
+UID:48ef163b-feff-4d3f-bed0-3c7bd1f6ea50@48ef.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Marcus Farbstein (21) Phil Goldman (19)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Marcus Farbstein (21) Phil Goldman (19)
+DTSTART:20260825T014500Z
+SUMMARY:Game vs Rockies
+UID:c3a2e954-367d-44b5-8cc0-1089aa42ff1e@c3a2.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bridgette Reilly (18) Marcus Farbstein (2)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bridgette Reilly (18) Marcus Farbstein (2)
+DTSTART:20260530T014500Z
+SUMMARY:Game vs Padres
+UID:7ebb6da5-a2da-4b4b-8117-8a03d7ac0727@7ebb.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Marcus Farbstein (3) Scott Ableman (7)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Marcus Farbstein (3) Scott Ableman (7)
+DTSTART:20260728T014500Z
+SUMMARY:Game vs Blue Jays
+UID:e0461659-182b-4583-be0a-222980443e97@e046.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Marcus Farbstein (53) Phil Goldman (16)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Marcus Farbstein (53) Phil Goldman (16)
+DTSTART:20260603T200500Z
+SUMMARY:Game vs Marlins
+UID:0a4538af-e2bc-4426-b744-fb0c53173fd1@0a45.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Marcus Farbstein (14) Phil Goldman (8)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Marcus Farbstein (14) Phil Goldman (8)
+DTSTART:20260408T014500Z
+SUMMARY:Game vs Cardinals
+UID:c692dfd2-b3bc-426d-9c4b-bdfdc8baf8ac@c692.org
+END:VEVENT
+END:VCALENDAR

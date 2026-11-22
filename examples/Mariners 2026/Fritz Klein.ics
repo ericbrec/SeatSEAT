@@ -1,0 +1,134 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: C\, Attendees: Al Erisman (15) Fritz Klein (10)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Al Erisman (15) Fritz Klein (10)
+DTSTART:20260806T201000Z
+SUMMARY:Game vs Tigers 
+UID:76d19627-88fc-47d3-81e5-df2130e87ffa@76d1.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Al Erisman (29) Fritz Klein (9)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Al Erisman (29) Fritz Klein (9)
+DTSTART:20260603T194000Z
+SUMMARY:Game vs Mets 
+UID:a07378c1-56b4-4ed4-ae96-44de9910202d@a073.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: B\, Attendees: Eric Brechner (42) Fritz Klein (5)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Eric Brechner (42) Fritz Klein (5)
+DTSTART:20260722T194000Z
+SUMMARY:Game vs Reds 
+UID:ad22cae6-704e-4802-b745-4ba31d374b21@ad22.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Andrés Muñoz POP! Collectible 3-Day Giveaway (First 10\,000 Fans\, presented by Funko)\nType: B\, Attendees: Fritz Klein (2) Ryan Falls (21)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Fritz Klein (2) Ryan Falls (21)
+DTSTART:20260910T201000Z
+SUMMARY:Game vs Rangers 
+UID:f13adc60-3d64-49bb-adaf-262a99c2ce61@f13a.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: D\, Attendees: Eric Brechner (50) Fritz Klein (7)
+DURATION:PT3H
+LOCATION:Type: D\, Attendees: Eric Brechner (50) Fritz Klein (7)
+DTSTART:20260401T201000Z
+SUMMARY:Game vs Yankees 
+UID:03c3d898-daf0-403e-87ec-5d366394632e@03c3.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: ’70s Pin Day (First 10\,000 Fans\, presented by KeyBank)\nType: B\, Attendees: Fritz Klein (7) Fritz Klein (7)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Fritz Klein (7) Fritz Klein (7)
+DTSTART:20260419T201000Z
+SUMMARY:Game vs Rangers 
+UID:bad6aee3-6d07-488b-9f3c-ba48e0111f3b@bad6.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Cal Raleigh POP! Collectible 3-Day Giveaway (First 10\,000 Fans\, presented by Funko)\nType: A\, Attendees: Eric Brechner (27) Fritz Klein (27)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Eric Brechner (27) Fritz Klein (27)
+DTSTART:20260703T014000Z
+SUMMARY:Game vs Angels 
+UID:0661a785-0d42-4467-b234-60f69ce36ac1@0661.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: B\, Attendees: Fritz Klein (22) Fritz Klein (22)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Fritz Klein (22) Fritz Klein (22)
+DTSTART:20260618T014000Z
+SUMMARY:Game vs Orioles 
+UID:7506f96b-5081-4443-b89f-46d96c01f5ea@7506.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: B\, Attendees: Al Erisman (6) Fritz Klein (1)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Al Erisman (6) Fritz Klein (1)
+DTSTART:20260826T201000Z
+SUMMARY:Game vs Phillies 
+UID:463c9bcc-f2ee-4662-ab06-f7c42af9e7d6@463c.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: B\, Attendees: Fritz Klein (3) Karen Boehmer (13)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Fritz Klein (3) Karen Boehmer (13)
+DTSTART:20260506T201000Z
+SUMMARY:Game vs Braves 
+UID:f611a641-6990-4518-ab37-3255606b5822@f611.org
+END:VEVENT
+END:VCALENDAR

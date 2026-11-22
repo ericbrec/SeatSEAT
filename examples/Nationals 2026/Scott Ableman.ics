@@ -1,0 +1,121 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Phil Goldman (28) Scott Ableman (17)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Phil Goldman (28) Scott Ableman (17)
+DTSTART:20260708T014500Z
+SUMMARY:Game vs Astros
+UID:189ca371-cf0b-436a-966f-dacebb1eb97d@189c.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bruce McDonald (52) Scott Ableman (14)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bruce McDonald (52) Scott Ableman (14)
+DTSTART:20260520T014500Z
+SUMMARY:Game vs Mets
+UID:a9e2e0b6-fc71-4b83-9b29-9bc5ac1dd54d@a9e2.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Marcus Farbstein (3) Scott Ableman (7)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Marcus Farbstein (3) Scott Ableman (7)
+DTSTART:20260728T014500Z
+SUMMARY:Game vs Blue Jays
+UID:f175731e-9f23-4ac9-b41f-47656e1e2758@f175.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bridgette Reilly (9) Scott Ableman (3)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bridgette Reilly (9) Scott Ableman (3)
+DTSTART:20260809T014500Z
+SUMMARY:Game vs Reds
+UID:53396008-4d89-449d-8fed-317b68f47fa0@5339.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: David Dorris (7) Scott Ableman (13)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: David Dorris (7) Scott Ableman (13)
+DTSTART:20260812T014500Z
+SUMMARY:Game vs Cubs
+UID:7ccd4167-a232-49a8-89ca-101f1b799059@7ccd.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bob Lowry (7) Scott Ableman (4)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bob Lowry (7) Scott Ableman (4)
+DTSTART:20260712T203500Z
+SUMMARY:Game vs Yankees
+UID:e337e32e-ba86-47e5-8e40-601b848a9b71@e337.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Phil Goldman (7) Scott Ableman (18)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Phil Goldman (7) Scott Ableman (18)
+DTSTART:20260829T230500Z
+SUMMARY:Game vs Marlins
+UID:2d0ea33c-b0b6-4fb1-a2e2-649585548c05@2d0e.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Scott Ableman (12) Spare Pair (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Scott Ableman (12) Spare Pair (1)
+DTSTART:20260405T203500Z
+SUMMARY:Game vs Dodgers
+UID:1e6d6101-44e4-466c-91ef-e64eb2d76836@1e6d.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Scott Ableman (1) Scott Ableman (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Scott Ableman (1) Scott Ableman (1)
+DTSTART:20260403T200500Z
+SUMMARY:Game vs Dodgers
+UID:e673c8a0-ffcb-449f-aa52-b35224d30e69@e673.org
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,134 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bob Lowry (1) Bridgette Reilly (8)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bob Lowry (1) Bridgette Reilly (8)
+DTSTART:20260418T230500Z
+SUMMARY:Game vs Giants
+UID:62aa2e7c-7e6c-428e-b038-a866c4053b79@62aa.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bob Lowry (21) Spare Pair (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bob Lowry (21) Spare Pair (1)
+DTSTART:20260809T203500Z
+SUMMARY:Game vs Reds
+UID:204275ef-8f5a-4da0-bbb4-e7f4f063218b@2042.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bob Lowry (22) Spare Pair (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bob Lowry (22) Spare Pair (1)
+DTSTART:20260830T203500Z
+SUMMARY:Game vs Marlins
+UID:b833d049-1ecc-4e64-936c-04620c85782f@b833.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bob Lowry (2) Marcus Farbstein (9)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bob Lowry (2) Marcus Farbstein (9)
+DTSTART:20260502T014500Z
+SUMMARY:Game vs Brewers
+UID:63942b3e-18de-4dc0-ac9e-f58671aca60c@6394.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bob Lowry (10) Spare Pair (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bob Lowry (10) Spare Pair (1)
+DTSTART:20260813T230500Z
+SUMMARY:Game vs Cubs
+UID:9fa52010-da59-47aa-a862-70f3486c9932@9fa5.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bob Lowry (7) Scott Ableman (4)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bob Lowry (7) Scott Ableman (4)
+DTSTART:20260712T203500Z
+SUMMARY:Game vs Yankees
+UID:c4141bf3-bfa3-421a-a1ec-9003f44a01d0@c414.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bob Lowry (4) Phil Goldman (4)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bob Lowry (4) Phil Goldman (4)
+DTSTART:20260530T230500Z
+SUMMARY:Game vs Padres
+UID:4b189033-3154-438c-8f7b-f99ffe0453a2@4b18.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bob Lowry (8) Phil Goldman (12)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bob Lowry (8) Phil Goldman (12)
+DTSTART:20260726T203500Z
+SUMMARY:Game vs D-backs
+UID:dc03e950-d81a-40af-b423-48f57607dfa3@dc03.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bob Lowry (5) Spare Pair (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bob Lowry (5) Spare Pair (1)
+DTSTART:20260614T203500Z
+SUMMARY:Game vs Mariners
+UID:2661d398-40b6-4ea7-a847-097d6ba0273f@2661.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bob Lowry (6) David Dorris (5)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bob Lowry (6) David Dorris (5)
+DTSTART:20260704T180500Z
+SUMMARY:Game vs Pirates
+UID:4a52e41f-68e3-4e5e-b597-114efc3905d4@4a52.org
+END:VEVENT
+END:VCALENDAR

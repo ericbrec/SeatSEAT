@@ -1,0 +1,186 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Cal Raleigh POP! Collectible 3-Day Giveaway (First 10\,000 Fans\, presented by Funko)\nType: B\, Attendees: Al Erisman (47) Tom Grandine (36)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Al Erisman (47) Tom Grandine (36)
+DTSTART:20260701T014000Z
+SUMMARY:Game vs Angels 
+UID:559ec8ae-db47-40a3-8b77-14a86043dc55@559e.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: C\, Attendees: Al Erisman (10) Tom Grandine (8)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Al Erisman (10) Tom Grandine (8)
+DTSTART:20260721T014000Z
+SUMMARY:Game vs Reds 
+UID:7822076a-bd75-4c15-8946-b0b6ab14565c@7822.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Salute to Armed Forces Night – Military Cap Giveaway (First 10\,000 Fans\, presented by Boeing)\nType: D\, Attendees: Mike Neff (8) Tom Grandine (9)
+DURATION:PT3H
+LOCATION:Type: D\, Attendees: Mike Neff (8) Tom Grandine (9)
+DTSTART:20260516T231500Z
+SUMMARY:Game vs Padres 
+UID:532a49a3-407d-4ec4-b32c-9519b33bb24e@532a.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Opening Day – Magnetic Schedule Giveaway (First 35\,000 Fans\, presented by Starbucks)\nType: A\, Attendees: Eric Brechner (1) Tom Grandine (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Eric Brechner (1) Tom Grandine (1)
+DTSTART:20260327T021000Z
+SUMMARY:Game vs Guardians 
+UID:75214711-06ce-465e-90f8-a7ffac6679f7@7521.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: 50 Seasons Celebration Night\nType: A\, Attendees: Eric Brechner (9) Tom Grandine (12)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Eric Brechner (9) Tom Grandine (12)
+DTSTART:20260809T015000Z
+SUMMARY:Game vs Rays 
+UID:ee5f175a-7951-443a-aded-92956f6992a6@ee5f.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Cal Raleigh ’70s Jersey Night (First 15\,000 Fans\, presented by Virginia Mason Franciscan Health)\nType: B\, Attendees: Tom Grandine (3) Tom Grandine (3)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Tom Grandine (3) Tom Grandine (3)
+DTSTART:20260418T231500Z
+SUMMARY:Game vs Rangers 
+UID:54f5ae74-0331-4741-9733-f3e11edac4b5@54f5.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Andrés Muñoz POP! Collectible 3-Day Giveaway (First 10\,000 Fans\, presented by Funko)\nType: B\, Attendees: Eric Brechner (23) Tom Grandine (25)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Eric Brechner (23) Tom Grandine (25)
+DTSTART:20260910T014000Z
+SUMMARY:Game vs Rangers 
+UID:ca06f81c-3f45-450c-afe3-002f61084f43@ca06.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Humpy Shoulder Plush Night (First 20\,000 Fans\, presented by Microsoft)\nType: D\, Attendees: Michael Erisman (3) Tom Grandine (41)
+DURATION:PT3H
+LOCATION:Type: D\, Attendees: Michael Erisman (3) Tom Grandine (41)
+DTSTART:20260412T014000Z
+SUMMARY:Game vs Astros 
+UID:b475ba24-a0b1-4b9d-b397-2b67be8bd2d6@b475.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Randy Johnson Number Retirement Ceremony Night\nType: A\, Attendees: Mike Neff (1) Tom Grandine (2)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Mike Neff (1) Tom Grandine (2)
+DTSTART:20260503T014000Z
+SUMMARY:Game vs Royals 
+UID:56668ad6-6c42-4d8e-8d7f-5d91e164051d@5666.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: C\, Attendees: Tom Grandine (10) Tom Grandine (10)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Tom Grandine (10) Tom Grandine (10)
+DTSTART:20260923T014000Z
+SUMMARY:Game vs Astros 
+UID:51c1e2d6-b2d5-4ce5-a0da-b134199cd991@51c1.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: C\, Attendees: Cole Graves (2) Tom Grandine (14)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Cole Graves (2) Tom Grandine (14)
+DTSTART:20260602T014000Z
+SUMMARY:Game vs Mets 
+UID:8a6e7997-58e3-44d7-af32-7f6ef794aa8a@8a6e.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Eric Brechner (47) Tom Grandine (16)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Eric Brechner (47) Tom Grandine (16)
+DTSTART:20260617T014000Z
+SUMMARY:Game vs Orioles 
+UID:03240f74-e36f-4d43-bf6c-c8d3c4f9a42f@0324.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Native American Heritage Night (presented by Muckleshoot Casino Resort)\nType: B\, Attendees: Al Erisman (4) Tom Grandine (5)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Al Erisman (4) Tom Grandine (5)
+DTSTART:20260825T014000Z
+SUMMARY:Game vs Phillies 
+UID:0f699c0c-09d2-4eef-a8af-4a573f67554b@0f69.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Fan Appreciation Night (presented by Starbucks) + Fireworks Night (presented by T-Mobile)\nType: C\, Attendees: Tom Grandine (6) Tom Grandine (6)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Tom Grandine (6) Tom Grandine (6)
+DTSTART:20260905T021000Z
+SUMMARY:Game vs Athletics 
+UID:3b1026d0-fd99-466d-9e90-c4d161d4ab30@3b10.org
+END:VEVENT
+END:VCALENDAR

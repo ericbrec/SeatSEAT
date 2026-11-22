@@ -1,0 +1,290 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Hello Kitty® Clear Crossbody Bag Night (First 20\,000 Fans\, presented by Starbucks)\nType: B\, Attendees: Eric Brechner (17) Michael Erisman (10)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Eric Brechner (17) Michael Erisman (10)
+DTSTART:20260516T014000Z
+SUMMARY:Game vs Padres 
+UID:2d69df8d-37a5-4a53-ae11-9539c916b2be@2d69.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Opening Day – Magnetic Schedule Giveaway (First 35\,000 Fans\, presented by Starbucks)\nType: A\, Attendees: Eric Brechner (1) Tom Grandine (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Eric Brechner (1) Tom Grandine (1)
+DTSTART:20260327T021000Z
+SUMMARY:Game vs Guardians 
+UID:6ce150f1-ea0c-44cb-a4ef-f229ad407b4c@6ce1.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Cole Graves (24) Eric Brechner (67)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Cole Graves (24) Eric Brechner (67)
+DTSTART:20260802T201000Z
+SUMMARY:Game vs Twins 
+UID:8be0ef9a-d18f-4a8e-b765-e0cdb3934515@8be0.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: ’90s Pin Day (First 10\,000 Fans\, presented by KeyBank)\nType: C\, Attendees: Eric Brechner (7) Michael Rochester (11)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Eric Brechner (7) Michael Rochester (11)
+DTSTART:20260531T201000Z
+SUMMARY:Game vs D-backs 
+UID:1d343bb6-356b-4972-abd2-ea16e26d127a@1d34.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: B\, Attendees: Eric Brechner (37) Ryan Falls (5)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Eric Brechner (37) Ryan Falls (5)
+DTSTART:20260826T014000Z
+SUMMARY:Game vs Phillies 
+UID:13bda9d6-bbbb-43d6-af8e-fcaa07820ab3@13bd.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: ’20s Pin Night (First 10\,000 Fans\, presented by KeyBank)\nType: A\, Attendees: Eric Brechner (4) Michael Rochester (2)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Eric Brechner (4) Michael Rochester (2)
+DTSTART:20260927T014000Z
+SUMMARY:Game vs Angels 
+UID:06ea4834-cea6-4bcf-890d-ece3b9c31439@06ea.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Andrés Muñoz POP! Collectible 3-Day Giveaway (First 10\,000 Fans\, presented by Funko)\nType: B\, Attendees: Eric Brechner (23) Tom Grandine (25)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Eric Brechner (23) Tom Grandine (25)
+DTSTART:20260910T014000Z
+SUMMARY:Game vs Rangers 
+UID:04b88d89-dba9-46b8-982f-4cf5c7e07edf@04b8.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Bryan Woo Bobblehead Night (First 20\,000 Fans\, presented by Lexus)\nType: C\, Attendees: Al Erisman (8) Eric Brechner (2)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Al Erisman (8) Eric Brechner (2)
+DTSTART:20260906T014000Z
+SUMMARY:Game vs Athletics 
+UID:0e6471aa-3862-49d4-8e9c-13cdfada6fcf@0e64.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: B\, Attendees: Eric Brechner (42) Fritz Klein (5)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Eric Brechner (42) Fritz Klein (5)
+DTSTART:20260722T194000Z
+SUMMARY:Game vs Reds 
+UID:86d882f4-8649-4396-b7da-010de8898dc3@86d8.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: D\, Attendees: Eric Brechner (34) Jordan Bork (21)
+DURATION:PT3H
+LOCATION:Type: D\, Attendees: Eric Brechner (34) Jordan Bork (21)
+DTSTART:20260412T201000Z
+SUMMARY:Game vs Astros 
+UID:708abdbe-a81b-48aa-a7c6-2e901b27157e@708a.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Fireworks Night (presented by T-Mobile)\nType: A\, Attendees: Eric Brechner (55) Mike Neff (17)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Eric Brechner (55) Mike Neff (17)
+DTSTART:20260704T021000Z
+SUMMARY:Game vs Blue Jays 
+UID:3c100a6b-8b01-49cd-9d5f-9fde04324d1a@3c10.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: ’80s Pin Day (First 10\,000 Fans\, presented by KeyBank)\nType: A\, Attendees: Eric Brechner (8) Michael Rochester (15)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Eric Brechner (8) Michael Rochester (15)
+DTSTART:20260503T201000Z
+SUMMARY:Game vs Royals 
+UID:f2f37f29-54f2-4cb0-8e5d-be29b599b0e0@f2f3.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Cal Raleigh POP! Collectible 3-Day Giveaway (First 10\,000 Fans\, presented by Funko)\nType: A\, Attendees: Eric Brechner (27) Fritz Klein (27)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Eric Brechner (27) Fritz Klein (27)
+DTSTART:20260703T014000Z
+SUMMARY:Game vs Angels 
+UID:d083ac6a-6a73-4287-b4fc-cfeb74360535@d083.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Fireworks Night (presented by T-Mobile)\nType: B\, Attendees: Al Erisman (1) Eric Brechner (12)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Al Erisman (1) Eric Brechner (12)
+DTSTART:20260822T021000Z
+SUMMARY:Game vs Cubs 
+UID:e9861554-e800-4f8f-bb02-f9bc5549d424@e986.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: C\, Attendees: Al Erisman (13) Eric Brechner (41)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Al Erisman (13) Eric Brechner (41)
+DTSTART:20260805T014000Z
+SUMMARY:Game vs Tigers 
+UID:d221fcd5-b55e-410b-9ac5-4311730eb44b@d221.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: B\, Attendees: Eric Brechner (31) Ryan Falls (52)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Eric Brechner (31) Ryan Falls (52)
+DTSTART:20260422T014000Z
+SUMMARY:Game vs Athletics 
+UID:26a42403-40b3-40bc-8b6b-163c8258d42c@26a4.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: B\, Attendees: Al Erisman (18) Eric Brechner (19)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Al Erisman (18) Eric Brechner (19)
+DTSTART:20260506T014000Z
+SUMMARY:Game vs Braves 
+UID:dd557a0a-2fca-4c36-af94-a4b512168ad4@dd55.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: C\, Attendees: Eric Brechner (21) Ryan Falls (20)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Eric Brechner (21) Ryan Falls (20)
+DTSTART:20260924T021000Z
+SUMMARY:Game vs Astros 
+UID:2e98f45c-dfdd-41d7-95e8-9bb82a6101ec@2e98.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Eric Brechner (47) Tom Grandine (16)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Eric Brechner (47) Tom Grandine (16)
+DTSTART:20260617T014000Z
+SUMMARY:Game vs Orioles 
+UID:bd2a38fb-0b02-4493-b4fc-6a7ba241af9d@bd2a.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: ’00s Pin Day (First 10\,000 Fans\, presented by KeyBank)\nType: C\, Attendees: Eric Brechner (6) Michael Rochester (7)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Eric Brechner (6) Michael Rochester (7)
+DTSTART:20260719T201000Z
+SUMMARY:Game vs Giants 
+UID:a6630085-455a-4fd7-8b34-8fb48e18a39a@a663.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: D\, Attendees: Eric Brechner (50) Fritz Klein (7)
+DURATION:PT3H
+LOCATION:Type: D\, Attendees: Eric Brechner (50) Fritz Klein (7)
+DTSTART:20260401T201000Z
+SUMMARY:Game vs Yankees 
+UID:067f1e6f-7457-4e99-8f8d-31aaa7a503f5@067f.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: 50 Seasons Celebration Night\nType: A\, Attendees: Eric Brechner (9) Tom Grandine (12)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Eric Brechner (9) Tom Grandine (12)
+DTSTART:20260809T015000Z
+SUMMARY:Game vs Rays 
+UID:489c88f9-e1ad-4c69-a7a9-4db81475babf@489c.org
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,134 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Nicoletta Saffelle (1) Nicoletta Saffelle (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Nicoletta Saffelle (1) Nicoletta Saffelle (1)
+DTSTART:20260506T014500Z
+SUMMARY:Game vs Twins
+UID:5db4da19-8d4d-4de6-af01-574339a456bd@5db4.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Nicoletta Saffelle (20) Nicoletta Saffelle (20)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Nicoletta Saffelle (20) Nicoletta Saffelle (20)
+DTSTART:20260827T014500Z
+SUMMARY:Game vs Rockies
+UID:b407ecd4-a193-4852-a3da-4c1982e86569@b407.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Nicoletta Saffelle (17) Nicoletta Saffelle (17)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Nicoletta Saffelle (17) Nicoletta Saffelle (17)
+DTSTART:20260813T014500Z
+SUMMARY:Game vs Cubs
+UID:029a6b1d-6b50-4b8d-b1d1-d7b91e80d477@029a.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Nicoletta Saffelle (27) Nicoletta Saffelle (27)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Nicoletta Saffelle (27) Nicoletta Saffelle (27)
+DTSTART:20260422T014500Z
+SUMMARY:Game vs Braves
+UID:45cecee2-86f2-4496-a388-303fa3f202f0@45ce.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Nicoletta Saffelle (7) Nicoletta Saffelle (7)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Nicoletta Saffelle (7) Nicoletta Saffelle (7)
+DTSTART:20260623T014500Z
+SUMMARY:Game vs Phillies
+UID:5a7c31ea-1e82-450c-b277-e064ff1d802e@5a7c.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Nicoletta Saffelle (23) Nicoletta Saffelle (23)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Nicoletta Saffelle (23) Nicoletta Saffelle (23)
+DTSTART:20260916T014500Z
+SUMMARY:Game vs Phillies
+UID:1a5d0347-d4e8-4987-a921-a1c95eb30a35@1a5d.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Nicoletta Saffelle (5) Nicoletta Saffelle (5)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Nicoletta Saffelle (5) Nicoletta Saffelle (5)
+DTSTART:20260616T014500Z
+SUMMARY:Game vs Royals
+UID:f2f5aa0a-a6f4-45d1-9f99-1cff5efefd36@f2f5.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Nicoletta Saffelle (21) Nicoletta Saffelle (21)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Nicoletta Saffelle (21) Nicoletta Saffelle (21)
+DTSTART:20260901T014500Z
+SUMMARY:Game vs Marlins
+UID:8b0b7399-e7a0-463a-b5b1-445480c5991d@8b0b.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Nicoletta Saffelle (3) Nicoletta Saffelle (3)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Nicoletta Saffelle (3) Nicoletta Saffelle (3)
+DTSTART:20260602T014500Z
+SUMMARY:Game vs Marlins
+UID:7ba0dbb8-dbab-4bda-a2da-1ecd833bb429@7ba0.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Nicoletta Saffelle (11) Nicoletta Saffelle (11)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Nicoletta Saffelle (11) Nicoletta Saffelle (11)
+DTSTART:20260707T014500Z
+SUMMARY:Game vs Astros
+UID:fa9e6e29-3c67-4729-a434-a0c880e9b116@fa9e.org
+END:VEVENT
+END:VCALENDAR

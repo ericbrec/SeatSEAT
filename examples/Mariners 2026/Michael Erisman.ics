@@ -1,0 +1,108 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: C\, Attendees: Michael Erisman (30) Michael Jones (28)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Michael Erisman (30) Michael Jones (28)
+DTSTART:20260904T014000Z
+SUMMARY:Game vs Athletics 
+UID:dfb10f88-36a0-4683-8c94-301f5b4ca595@dfb1.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Humpy Shoulder Plush Night (First 20\,000 Fans\, presented by Microsoft)\nType: D\, Attendees: Michael Erisman (3) Tom Grandine (41)
+DURATION:PT3H
+LOCATION:Type: D\, Attendees: Michael Erisman (3) Tom Grandine (41)
+DTSTART:20260412T014000Z
+SUMMARY:Game vs Astros 
+UID:6bb10187-fed5-4ba6-8cc2-3676c7efcff8@6bb1.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: C\, Attendees: Michael Erisman (4) Michael Erisman (4)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Michael Erisman (4) Michael Erisman (4)
+DTSTART:20260806T014000Z
+SUMMARY:Game vs Tigers 
+UID:b84af494-7819-4a9d-8d2c-43ab094a5020@b84a.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Randy Johnson ’80s Jersey Night (First 20\,000 Fans\, presented by T-Mobile)\nType: D\, Attendees: Jordan Bork (4) Michael Erisman (8)
+DURATION:PT3H
+LOCATION:Type: D\, Attendees: Jordan Bork (4) Michael Erisman (8)
+DTSTART:20260502T014500Z
+SUMMARY:Game vs Royals 
+UID:dea25fbb-5cec-46c9-ae98-f382268fba30@dea2.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Kingdome Fanny Pack Hat Night (First 10\,000 Fans\, presented by Global FCU)\nType: B\, Attendees: Michael Erisman (4) Mike Neff (21)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Michael Erisman (4) Mike Neff (21)
+DTSTART:20260418T014000Z
+SUMMARY:Game vs Rangers 
+UID:99404766-b27f-4d66-933b-a6c3b3e939f0@9940.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Hello Kitty® Clear Crossbody Bag Night (First 20\,000 Fans\, presented by Starbucks)\nType: B\, Attendees: Eric Brechner (17) Michael Erisman (10)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Eric Brechner (17) Michael Erisman (10)
+DTSTART:20260516T014000Z
+SUMMARY:Game vs Padres 
+UID:1862716c-2d09-4041-a78b-369bf480b969@1862.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: B\, Attendees: Jordan Bork (35) Michael Erisman (6)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Jordan Bork (35) Michael Erisman (6)
+DTSTART:20260421T014000Z
+SUMMARY:Game vs Athletics 
+UID:9b8c6d5e-eb98-4297-86a5-f52a43d4701c@9b8c.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: ’10s Pin Day (First 10\,000 Fans\, presented by KeyBank)\nType: B\, Attendees: Michael Erisman (1) Michael Erisman (1)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Michael Erisman (1) Michael Erisman (1)
+DTSTART:20260823T201000Z
+SUMMARY:Game vs Cubs 
+UID:9b08cef6-d672-422c-99d6-94b8a49e96f2@9b08.org
+END:VEVENT
+END:VCALENDAR

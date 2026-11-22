@@ -1,0 +1,134 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bridgette Reilly (12) Bridgette Reilly (12)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bridgette Reilly (12) Bridgette Reilly (12)
+DTSTART:20260912T230500Z
+SUMMARY:Game vs Angels
+UID:25032b8d-2ca8-46f7-b304-1c1b674f6154@2503.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bridgette Reilly (6) Phil Goldman (10)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bridgette Reilly (6) Phil Goldman (10)
+DTSTART:20260617T014500Z
+SUMMARY:Game vs Royals
+UID:25afeac8-07c6-4b6a-bab0-605117c36d40@25af.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bridgette Reilly (9) Scott Ableman (3)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bridgette Reilly (9) Scott Ableman (3)
+DTSTART:20260809T014500Z
+SUMMARY:Game vs Reds
+UID:b10ae6c5-6850-426e-a8f3-942e231e5640@b10a.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bridgette Reilly (22) Marcus Farbstein (8)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bridgette Reilly (22) Marcus Farbstein (8)
+DTSTART:20260423T014500Z
+SUMMARY:Game vs Braves
+UID:78256952-3fc0-45bf-aa6f-62a7316a9930@7825.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bob Lowry (1) Bridgette Reilly (8)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bob Lowry (1) Bridgette Reilly (8)
+DTSTART:20260418T230500Z
+SUMMARY:Game vs Giants
+UID:02d7b773-29d8-468a-b45d-4c3de7c94542@02d7.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bridgette Reilly (18) Marcus Farbstein (2)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bridgette Reilly (18) Marcus Farbstein (2)
+DTSTART:20260530T014500Z
+SUMMARY:Game vs Padres
+UID:7b050289-4b07-4bc3-8f2f-bb5cc354f2aa@7b05.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bridgette Reilly (4) Bridgette Reilly (4)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bridgette Reilly (4) Bridgette Reilly (4)
+DTSTART:20260729T014500Z
+SUMMARY:Game vs Blue Jays
+UID:dd017355-a7af-4f14-a8d5-299051ec88c9@dd01.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bridgette Reilly (5) Bridgette Reilly (5)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bridgette Reilly (5) Bridgette Reilly (5)
+DTSTART:20260704T014500Z
+SUMMARY:Game vs Pirates
+UID:9e73c94f-70e7-4136-8e4f-b14eca2665c6@9e73.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bridgette Reilly (1) Bridgette Reilly (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bridgette Reilly (1) Bridgette Reilly (1)
+DTSTART:20260516T014500Z
+SUMMARY:Game vs Orioles
+UID:3703baa9-ebaf-4c13-bfa2-19d1bf17e1e7@3703.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bridgette Reilly (3) Phil Goldman (2)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bridgette Reilly (3) Phil Goldman (2)
+DTSTART:20260502T230500Z
+SUMMARY:Game vs Brewers
+UID:0de87277-56bc-476b-9e3f-b77577b33dc6@0de8.org
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,160 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: David Dorris (36) Phil Goldman (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: David Dorris (36) Phil Goldman (1)
+DTSTART:20260624T014500Z
+SUMMARY:Game vs Phillies
+UID:bad015b9-c7d8-4071-b1ac-c03b1d9c7686@bad0.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Phil Goldman (7) Scott Ableman (18)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Phil Goldman (7) Scott Ableman (18)
+DTSTART:20260829T230500Z
+SUMMARY:Game vs Marlins
+UID:084b7ccc-2635-46d8-9fab-98df06c99003@084b.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Marcus Farbstein (53) Phil Goldman (16)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Marcus Farbstein (53) Phil Goldman (16)
+DTSTART:20260603T200500Z
+SUMMARY:Game vs Marlins
+UID:2a43e633-9745-4e33-8ea3-55e51aff7d4b@2a43.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bridgette Reilly (3) Phil Goldman (2)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bridgette Reilly (3) Phil Goldman (2)
+DTSTART:20260502T230500Z
+SUMMARY:Game vs Brewers
+UID:b30b345f-7684-49af-ad91-e1f3169afe98@b30b.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Marcus Farbstein (14) Phil Goldman (8)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Marcus Farbstein (14) Phil Goldman (8)
+DTSTART:20260408T014500Z
+SUMMARY:Game vs Cardinals
+UID:da2016ed-23ca-4d52-952a-652ec522a3bd@da20.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Marcus Farbstein (21) Phil Goldman (19)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Marcus Farbstein (21) Phil Goldman (19)
+DTSTART:20260825T014500Z
+SUMMARY:Game vs Rockies
+UID:dfa2e974-195d-4d1b-8a01-7a7f0267268b@dfa2.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: David Dorris (11) Phil Goldman (14)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: David Dorris (11) Phil Goldman (14)
+DTSTART:20260926T014500Z
+SUMMARY:Game vs Mets
+UID:f7c2e45d-d6fb-440b-8ff9-974153645fa6@f7c2.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Phil Goldman (17) Spare Pair (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Phil Goldman (17) Spare Pair (1)
+DTSTART:20260521T230500Z
+SUMMARY:Game vs Mets
+UID:5acb5c1f-1170-4777-8bf1-1c319ffcfcc6@5acb.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bob Lowry (4) Phil Goldman (4)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bob Lowry (4) Phil Goldman (4)
+DTSTART:20260530T230500Z
+SUMMARY:Game vs Padres
+UID:aaa3c1c1-e357-4d08-9a13-823182e9d539@aaa3.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bob Lowry (8) Phil Goldman (12)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bob Lowry (8) Phil Goldman (12)
+DTSTART:20260726T203500Z
+SUMMARY:Game vs D-backs
+UID:6bc96645-c61e-4662-be39-6cf8cff31b63@6bc9.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bridgette Reilly (6) Phil Goldman (10)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bridgette Reilly (6) Phil Goldman (10)
+DTSTART:20260617T014500Z
+SUMMARY:Game vs Royals
+UID:a2444c85-2c22-412b-9cc2-54a75e9cfb8a@a244.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Phil Goldman (28) Scott Ableman (17)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Phil Goldman (28) Scott Ableman (17)
+DTSTART:20260708T014500Z
+SUMMARY:Game vs Astros
+UID:02e6a816-25da-467a-ac50-3f9955bc7870@02e6.org
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,108 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Rick Calder (2) Rick Calder (2)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Rick Calder (2) Rick Calder (2)
+DTSTART:20260516T230500Z
+SUMMARY:Game vs Orioles
+UID:2374fb79-e484-4df4-95d9-ac600049a472@2374.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Rick Calder (23) Rick Calder (23)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Rick Calder (23) Rick Calder (23)
+DTSTART:20260519T014500Z
+SUMMARY:Game vs Mets
+UID:080e5e4a-6940-4e38-8fd4-1af2a9d5e47d@080e.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Rick Calder (22) Rick Calder (22)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Rick Calder (22) Rick Calder (22)
+DTSTART:20260423T200500Z
+SUMMARY:Game vs Braves
+UID:13ffed53-bfa9-4b2a-91fe-b273f4687cf2@13ff.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Rick Calder (9) Rick Calder (9)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Rick Calder (9) Rick Calder (9)
+DTSTART:20260725T014500Z
+SUMMARY:Game vs D-backs
+UID:3642fb55-c3af-4fee-b9be-3b3b61075804@3642.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Rick Calder (12) Rick Calder (12)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Rick Calder (12) Rick Calder (12)
+DTSTART:20260927T220500Z
+SUMMARY:Game vs Mets
+UID:9f47b096-5bf7-435a-acdc-d0623d511a7b@9f47.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Rick Calder (7) Rick Calder (7)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Rick Calder (7) Rick Calder (7)
+DTSTART:20260419T203500Z
+SUMMARY:Game vs Giants
+UID:f1f620d2-88a6-4a8a-89cc-dae2fa28cb79@f1f6.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Rick Calder (1) Rick Calder (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Rick Calder (1) Rick Calder (1)
+DTSTART:20260711T014500Z
+SUMMARY:Game vs Yankees
+UID:42acb358-cb2e-4526-9d42-528286f2c0f3@42ac.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Rick Calder (3) Rick Calder (3)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Rick Calder (3) Rick Calder (3)
+DTSTART:20260626T014500Z
+SUMMARY:Game vs Phillies
+UID:2bdc0021-3090-4610-bf43-2823ae184412@2bdc.org
+END:VEVENT
+END:VCALENDAR

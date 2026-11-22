@@ -1,0 +1,199 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: C\, Attendees: Al Erisman (5) Jordan Bork (1)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Al Erisman (5) Jordan Bork (1)
+DTSTART:20260621T201000Z
+SUMMARY:Game vs Red Sox 
+UID:9639a911-35b3-42b9-a29c-b87adcae98a2@9639.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Fireworks Night (presented by T-Mobile)\nType: B\, Attendees: Al Erisman (1) Eric Brechner (12)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Al Erisman (1) Eric Brechner (12)
+DTSTART:20260822T021000Z
+SUMMARY:Game vs Cubs 
+UID:e892c70b-a466-4cac-9997-dee5f84f4142@e892.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: C\, Attendees: Al Erisman (15) Fritz Klein (10)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Al Erisman (15) Fritz Klein (10)
+DTSTART:20260806T201000Z
+SUMMARY:Game vs Tigers 
+UID:2db211a8-8dea-4b9e-b71b-5f85e45a063a@2db2.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Cal Raleigh POP! Collectible 3-Day Giveaway (First 10\,000 Fans\, presented by Funko)\nType: B\, Attendees: Al Erisman (47) Tom Grandine (36)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Al Erisman (47) Tom Grandine (36)
+DTSTART:20260701T014000Z
+SUMMARY:Game vs Angels 
+UID:a3cc3411-edff-4ece-8672-b01d7f866b8d@a3cc.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: B\, Attendees: Al Erisman (6) Fritz Klein (1)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Al Erisman (6) Fritz Klein (1)
+DTSTART:20260826T201000Z
+SUMMARY:Game vs Phillies 
+UID:49514bcf-7231-4b67-b492-076889a9ccdc@4951.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: C\, Attendees: Al Erisman (10) Tom Grandine (8)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Al Erisman (10) Tom Grandine (8)
+DTSTART:20260721T014000Z
+SUMMARY:Game vs Reds 
+UID:0430b634-bd0d-4535-b157-ea6771222667@0430.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Fireworks Night (presented by T-Mobile)\nType: B\, Attendees: Al Erisman (16) Jordan Bork (15)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Al Erisman (16) Jordan Bork (15)
+DTSTART:20260530T021000Z
+SUMMARY:Game vs D-backs 
+UID:ece7bb56-751f-4f24-9f1b-9574e4966b45@ece7.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Josh Naylor Bobblehead 2-Day Giveaway (First 10\,000 Fans\, presented by Toyota Dealers)\nType: D\, Attendees: Al Erisman (23) Cole Graves (15)
+DURATION:PT3H
+LOCATION:Type: D\, Attendees: Al Erisman (23) Cole Graves (15)
+DTSTART:20260519T014000Z
+SUMMARY:Game vs White Sox 
+UID:f8defab7-4e3c-4ba8-be56-acade416dd37@f8de.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: C\, Attendees: Al Erisman (13) Eric Brechner (41)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Al Erisman (13) Eric Brechner (41)
+DTSTART:20260805T014000Z
+SUMMARY:Game vs Tigers 
+UID:11a54183-05e1-48f8-b448-fffa289aafc6@11a5.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Bryan Woo Bobblehead Night (First 20\,000 Fans\, presented by Lexus)\nType: C\, Attendees: Al Erisman (8) Eric Brechner (2)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Al Erisman (8) Eric Brechner (2)
+DTSTART:20260906T014000Z
+SUMMARY:Game vs Athletics 
+UID:35306c20-5c4c-4fd7-8f06-8313ff3163b6@3530.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Fireworks Night (presented by T-Mobile)\nType: A\, Attendees: Al Erisman (7) Ryan Falls (6)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Al Erisman (7) Ryan Falls (6)
+DTSTART:20260718T021000Z
+SUMMARY:Game vs Giants 
+UID:50281e1d-98fd-4c28-ad86-239f669655d1@5028.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: C\, Attendees: Al Erisman (7) Al Erisman (7)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Al Erisman (7) Al Erisman (7)
+DTSTART:20260722T014000Z
+SUMMARY:Game vs Reds 
+UID:ae6822dd-2fb0-4b0f-9bdb-b34f91bbc056@ae68.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Al Erisman (29) Fritz Klein (9)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Al Erisman (29) Fritz Klein (9)
+DTSTART:20260603T194000Z
+SUMMARY:Game vs Mets 
+UID:6645d117-f155-470d-8420-a09ffd9a098d@6645.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Native American Heritage Night (presented by Muckleshoot Casino Resort)\nType: B\, Attendees: Al Erisman (4) Tom Grandine (5)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Al Erisman (4) Tom Grandine (5)
+DTSTART:20260825T014000Z
+SUMMARY:Game vs Phillies 
+UID:9ba80b22-6ee9-4911-b788-8b583a27a1b1@9ba8.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: B\, Attendees: Al Erisman (18) Eric Brechner (19)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Al Erisman (18) Eric Brechner (19)
+DTSTART:20260506T014000Z
+SUMMARY:Game vs Braves 
+UID:c7db2030-09ed-4b6a-942b-f30ab75eb08b@c7db.org
+END:VEVENT
+END:VCALENDAR

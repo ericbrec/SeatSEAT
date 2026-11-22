@@ -1,0 +1,121 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Fourth of July – Patriotic Bucket Hat Giveaway (First 10\,000 Fans\, presented by Coca-Cola)\nType: A\, Attendees: Jordan Bork (11) Michael Jones (3)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Jordan Bork (11) Michael Jones (3)
+DTSTART:20260704T201000Z
+SUMMARY:Game vs Blue Jays 
+UID:754d247f-6b6a-4f5d-aed4-e00eafa3db6f@754d.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Randy Johnson ’80s Jersey Night (First 20\,000 Fans\, presented by T-Mobile)\nType: D\, Attendees: Jordan Bork (4) Michael Erisman (8)
+DURATION:PT3H
+LOCATION:Type: D\, Attendees: Jordan Bork (4) Michael Erisman (8)
+DTSTART:20260502T014500Z
+SUMMARY:Game vs Royals 
+UID:2d723328-7112-4900-b123-0275118be4c1@2d72.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: D\, Attendees: Eric Brechner (34) Jordan Bork (21)
+DURATION:PT3H
+LOCATION:Type: D\, Attendees: Eric Brechner (34) Jordan Bork (21)
+DTSTART:20260412T201000Z
+SUMMARY:Game vs Astros 
+UID:d23d4cc1-7a76-4360-be15-2697a279df12@d23d.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Aloha Shirt Day (First 15\,000 Fans)\nType: A\, Attendees: Jordan Bork (1) Jordan Bork (1)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Jordan Bork (1) Jordan Bork (1)
+DTSTART:20260801T201000Z
+SUMMARY:Game vs Twins 
+UID:0fd0cd4d-925a-4dc3-a2f0-65e2d5afa236@0fd0.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: B\, Attendees: Jordan Bork (31) Jordan Bork (31)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Jordan Bork (31) Jordan Bork (31)
+DTSTART:20260329T232000Z
+SUMMARY:Game vs Guardians 
+UID:5697ff2f-7fa4-4e7b-a5e1-30215ecd27d3@5697.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: C\, Attendees: Al Erisman (5) Jordan Bork (1)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Al Erisman (5) Jordan Bork (1)
+DTSTART:20260621T201000Z
+SUMMARY:Game vs Red Sox 
+UID:8665ddde-5081-4b01-9053-1d906d005bd1@8665.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Kids Appreciation Day (presented by BECU)\nType: C\, Attendees: Jordan Bork (21) Jordan Bork (21)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Jordan Bork (21) Jordan Bork (21)
+DTSTART:20260906T201000Z
+SUMMARY:Game vs Athletics 
+UID:30634845-158f-44fb-991a-562cbb52f2dd@3063.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: B\, Attendees: Jordan Bork (35) Michael Erisman (6)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Jordan Bork (35) Michael Erisman (6)
+DTSTART:20260421T014000Z
+SUMMARY:Game vs Athletics 
+UID:b8ddab74-babc-4e85-b8c0-5fc19080c78a@b8dd.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Fireworks Night (presented by T-Mobile)\nType: B\, Attendees: Al Erisman (16) Jordan Bork (15)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Al Erisman (16) Jordan Bork (15)
+DTSTART:20260530T021000Z
+SUMMARY:Game vs D-backs 
+UID:c135d1aa-153b-4e39-8e9e-218c92766113@c135.org
+END:VEVENT
+END:VCALENDAR

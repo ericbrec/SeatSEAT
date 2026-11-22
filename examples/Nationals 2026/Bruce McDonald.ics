@@ -1,0 +1,82 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bruce McDonald (5) Bruce McDonald (5)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bruce McDonald (5) Bruce McDonald (5)
+DTSTART:20260408T230500Z
+SUMMARY:Game vs Cardinals
+UID:21a01c84-2d45-49aa-979a-d101f253b018@21a0.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bruce McDonald (16) Bruce McDonald (16)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bruce McDonald (16) Bruce McDonald (16)
+DTSTART:20260826T014500Z
+SUMMARY:Game vs Rockies
+UID:96727d92-4b1b-4d41-b816-0e2d9efb4312@9672.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bruce McDonald (20) Bruce McDonald (20)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bruce McDonald (20) Bruce McDonald (20)
+DTSTART:20260902T200500Z
+SUMMARY:Game vs Braves
+UID:14d7b604-5443-40bd-8954-2caabccf46ca@14d7.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bruce McDonald (10) David Dorris (3)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bruce McDonald (10) David Dorris (3)
+DTSTART:20260711T230500Z
+SUMMARY:Game vs Yankees
+UID:037248d4-9103-4e35-9fa6-52aad0c82e72@0372.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bruce McDonald (52) Scott Ableman (14)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bruce McDonald (52) Scott Ableman (14)
+DTSTART:20260520T014500Z
+SUMMARY:Game vs Mets
+UID:3e05dcf5-f8dc-45b9-8f46-e720bd9b7cd0@3e05.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Bruce McDonald (4) Bruce McDonald (4)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Bruce McDonald (4) Bruce McDonald (4)
+DTSTART:20260613T230500Z
+SUMMARY:Game vs Mariners
+UID:da12c7e2-d49a-4f58-9c51-2ce25c76b740@da12.org
+END:VEVENT
+END:VCALENDAR

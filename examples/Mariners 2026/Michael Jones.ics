@@ -1,0 +1,56 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: C\, Attendees: Michael Jones (2) Mike Neff (6)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Michael Jones (2) Mike Neff (6)
+DTSTART:20260621T021000Z
+SUMMARY:Game vs Red Sox 
+UID:fc19d342-a451-4ecc-aced-ba4a6bcd57ea@fc19.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: C\, Attendees: Michael Erisman (30) Michael Jones (28)
+DURATION:PT3H
+LOCATION:Type: C\, Attendees: Michael Erisman (30) Michael Jones (28)
+DTSTART:20260904T014000Z
+SUMMARY:Game vs Athletics 
+UID:10606780-2642-4ba9-b367-e675e3458be5@1060.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Fourth of July – Patriotic Bucket Hat Giveaway (First 10\,000 Fans\, presented by Coca-Cola)\nType: A\, Attendees: Jordan Bork (11) Michael Jones (3)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Jordan Bork (11) Michael Jones (3)
+DTSTART:20260704T201000Z
+SUMMARY:Game vs Blue Jays 
+UID:47cc8969-a4ae-45a9-8e78-694b322b540a@47cc.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: A\, Attendees: Michael Jones (1) Mike Neff (7)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Michael Jones (1) Mike Neff (7)
+DTSTART:20260719T000800Z
+SUMMARY:Game vs Giants 
+UID:8cc5a45f-7e6e-47ed-b476-813b19fdd1bd@8cc5.org
+END:VEVENT
+END:VCALENDAR

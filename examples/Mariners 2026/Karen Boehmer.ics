@@ -1,0 +1,69 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Fireworks Night + Season Ticket Member Appreciation Night\nType: A\, Attendees: Karen Boehmer (7) Karen Boehmer (7)
+DURATION:PT3H
+LOCATION:Type: A\, Attendees: Karen Boehmer (7) Karen Boehmer (7)
+DTSTART:20260801T021000Z
+SUMMARY:Game vs Twins 
+UID:715c1c12-d7ac-490a-96c9-f20e02dc5395@715c.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: Stars & Stripes Soccer Jersey Day (First 15\,000 Fans\, presented by Alaska Airlines)\nType: B\, Attendees: Karen Boehmer (16) Karen Boehmer (16)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Karen Boehmer (16) Karen Boehmer (16)
+DTSTART:20260618T201000Z
+SUMMARY:Game vs Orioles 
+UID:926b9eeb-ec1f-4c68-89eb-520aeafbe73c@926b.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: D\, Attendees: Karen Boehmer (12) Karen Boehmer (12)
+DURATION:PT3H
+LOCATION:Type: D\, Attendees: Karen Boehmer (12) Karen Boehmer (12)
+DTSTART:20260422T201000Z
+SUMMARY:Game vs Athletics 
+UID:5fa29040-5f4e-4600-b2b6-3dc3fe1ae256@5fa2.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: B\, Attendees: Fritz Klein (3) Karen Boehmer (13)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Fritz Klein (3) Karen Boehmer (13)
+DTSTART:20260506T201000Z
+SUMMARY:Game vs Braves 
+UID:5f5df4b1-4b4d-43f8-b375-5d8fc540fe73@5f5d.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER:PT1H30M
+END:VALARM
+DESCRIPTION:Promotions: None\nType: B\, Attendees: Karen Boehmer (4) Karen Boehmer (4)
+DURATION:PT3H
+LOCATION:Type: B\, Attendees: Karen Boehmer (4) Karen Boehmer (4)
+DTSTART:20260520T201000Z
+SUMMARY:Game vs White Sox 
+UID:04add5ce-1dd3-4ea0-b991-9fc0dc571481@04ad.org
+END:VEVENT
+END:VCALENDAR
